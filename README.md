@@ -32,10 +32,10 @@ https://librosenlinea.co/
 - DRUETTA, CONSTANZA:  
 
 - FALLA DÍAZ, DORA STELLA:
-Ingeniera Industrial residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams.   
+Ingeniera Industrial, Mg. En Gestión de la Tecnología educativa, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams.   
 
 - GIRALDO LADINO, DANIEL: 
-Ingeniero Electrónico residente en Colombia con experiencia en docencia básica, media y universitaria, edad 33 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos.  
+Ingeniero Electrónico, Mg. En Gestión de TI, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 33 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos.  
 
 - RODRÍGUEZ, SILVIO:  
 
