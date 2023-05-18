@@ -27,7 +27,7 @@ https://librosenlinea.co/
 
 - CAGUA BERNAL, LUIS:  
 
-- CAGUA, FREDY:  
+- CAGUA, FREDY: Lic. en Matemática y Física, Mg. En Gestión en Tecnología Educativa, residente en Colombia con experiencia en docencia básica, media, edad 39 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos. 
 
 - DRUETTA, CONSTANZA:  
 
