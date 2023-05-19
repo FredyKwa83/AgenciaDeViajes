@@ -29,7 +29,8 @@ https://librosenlinea.co/
 
 - CAGUA, FREDY:  
 
-- DRUETTA, CONSTANZA:  
+- DRUETTA, CONSTANZA:
+Bailarina, apasionada de la danza contemporanea, incursionando el mundo de la programación a traves de Digital House.
 
 - FALLA DÍAZ, DORA STELLA:
 Ingeniera Industrial, Mg. En Gestión de la Tecnología educativa, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams.   
