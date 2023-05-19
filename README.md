@@ -30,7 +30,7 @@ https://librosenlinea.co/
 - CAGUA, FREDY: Lic. en Matemática y Física, Mg. En Gestión en Tecnología Educativa, residente en Colombia con experiencia en docencia básica, media, edad 39 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos. 
 
 - DRUETTA, CONSTANZA:
-Bailarina, apasionada de la danza contemporanea, incursionando el mundo de la programación a traves de Digital House.
+Bailarina, apasionada de la danza contemporanea, incursionando el mundo de la programación a traves de Digital House. (cotidruetta)
 
 - FALLA DÍAZ, DORA STELLA:
 Ingeniera Industrial, Mg. En Gestión de la Tecnología educativa, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams.   
