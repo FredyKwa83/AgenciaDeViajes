@@ -41,7 +41,7 @@ Ingeniero Electrónico, Mg. En Gestión de TI, residente en Colombia con experie
 - RODRÍGUEZ, SILVIO:  Lic. en Comunicación Audiovisual. 34 años. Experiencia en servicios, Customer experience, big data & business analytics. Procesos de formación, capacitación, mejora continua. (SRodriguez34)
 
 - RETO, ANDRÉS: 
-Abogado y entusiasta de la programación, mi interés en el tema se da hace un poco más de un año y realizo este curso con la intención de ampliar y adquirir conocimientos en la materia.  
+Abogado y entusiasta de la programación, mi interés en el tema se da hace un poco más de un año y realizo este curso con la intención de ampliar y adquirir conocimientos en la materia. (areto18) 
 
   
 
