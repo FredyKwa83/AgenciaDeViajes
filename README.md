@@ -25,7 +25,7 @@ https://librosenlinea.co/
 
 - ALVAREZ, NAHUEL: Estudiante residente en Argentina, 18 años, habilidades en el inglés y en herramientas como Excel y Word. (NanuCareaga)  
 
-- CAGUA BERNAL, LUIS:  Contador Publico, residente en Colombia con experiencia en cargo de Cuerpo de Custodia y Vigilancia Penitenciaria y Carcelaria Nacional.
+- CAGUA BERNAL, LUIS:  Contador Publico, residente en Colombia con experiencia en cargo de Cuerpo de Custodia y Vigilancia Penitenciaria y Carcelaria Nacional. (luiscagua)
 
 - CAGUA, FREDY: Lic. en Matemática y Física, Mg. En Gestión en Tecnología Educativa, residente en Colombia con experiencia en docencia básica, media, edad 39 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos. 
 
