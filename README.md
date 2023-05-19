@@ -33,7 +33,7 @@ https://librosenlinea.co/
 Bailarina, apasionada de la danza contemporanea, incursionando el mundo de la programación a traves de Digital House. (cotidruetta)
 
 - FALLA DÍAZ, DORA STELLA:
-Ingeniera Industrial, Mg. En Gestión de la Tecnología educativa, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams.   
+Ingeniera Industrial, Mg. En Gestión de la Tecnología educativa, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 34 años, habilidades en manejo de herramientas online de diseño y Microsoft teams. (dagne0701)  
 
 - GIRALDO LADINO, DANIEL: 
 Ingeniero Electrónico, Mg. En Gestión de TI, residente en Colombia con experiencia en docencia básica, media y universitaria, edad 33 años, habilidades en herramientas ofimáticas, y adaptación rápida en manejo de aplicativos. (danclon03) 
