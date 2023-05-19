@@ -1,14 +1,14 @@
-##GRUPO 7 CURSO PROGRAMACIÓN WEB FULL STACK 
-###Nombre Sitio: Arcolbooks 
+## GRUPO 7 CURSO PROGRAMACIÓN WEB FULL STACK 
+### Nombre Sitio: Arcolbooks 
 
-###DESCRIPCIÓN DEL SITIO: 
+### DESCRIPCIÓN DEL SITIO: 
 El sitio se basa en un e-commerce para la venta de libros, el cual cuenta con un catálogo amplio de opciones y categorías para lectores principalmente niños, Jóvenes y adultos jóvenes. 
   
-###PÚBLICO OBJETIVO: 
+### PÚBLICO OBJETIVO: 
 Los libros ofrecidos son para todo tipo de público, sin embargo, consideramos que la mayor demanda será de Niños, jóvenes y adultos jóvenes con edades entre los 6 y 35 años. 
   
 
-###PÁGINAS DE REFERENCIA EN LA QUE SE BASA EL PROYECTO: 
+### PÁGINAS DE REFERENCIA EN LA QUE SE BASA EL PROYECTO: 
 
 https://www.iberlibro.com/ 
 
@@ -21,7 +21,7 @@ https://www.estantevirtual.com.br/
 https://librosenlinea.co/ 
   
 
-###DESCRIPCIÓN DE LOS INTEGRANTES DEL PROYECTO: 
+### DESCRIPCIÓN DE LOS INTEGRANTES DEL PROYECTO: 
 
 - ALVAREZ, NAHUEL: Estudiante residente en Argentina, 18 años, habilidades en el inglés y en herramientas como Excel y Word. (NanuCareaga)  
 
@@ -45,6 +45,6 @@ Abogado y entusiasta de la programación, mi interés en el tema se da hace un p
 
   
 
-###LINK DEL TABLERO DE TRABAJO: 
+### LINK DEL TABLERO DE TRABAJO: 
 
 `<enlace>` :<https://trello.com/b/SREkmLoE/agencia>
