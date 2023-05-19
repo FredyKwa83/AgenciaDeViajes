@@ -23,7 +23,7 @@ https://librosenlinea.co/
 
 ###DESCRIPCIÓN DE LOS INTEGRANTES DEL PROYECTO: 
 
-- ALVAREZ, NAHUEL:  
+- ALVAREZ, NAHUEL: Estudiante residente en Argentina, 18 años, habilidades en el inglés y en herramientas como Excel y Word.   
 
 - CAGUA BERNAL, LUIS:  Contador Publico, residente en Colombia con experiencia en cargo de Cuerpo de Custodia y Vigilancia Penitenciaria y Carcelaria Nacional.
 
