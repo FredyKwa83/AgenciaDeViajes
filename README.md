@@ -48,3 +48,12 @@ Abogado y entusiasta de la programación, mi interés en el tema se da hace un p
 ### LINK DEL TABLERO DE TRABAJO: 
 
 `<enlace>` :<https://trello.com/b/SREkmLoE/agencia>
+
+
+### WIREFRAMES
+
+<https://ibb.co/DVYwc2J>
+<https://ibb.co/yyRkt9t>
+<https://ibb.co/xHhK0HR>
+<https://ibb.co/5vK5HrY>
+<https://ibb.co/6B9pLKH>
