@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin:0px;
+    padding:0px;
 }
 
 body {
@@ -8,15 +10,15 @@ body {
 
 .main-header {
     background-color: #1D1D1D;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
-.main-div {
+.main-div1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 10px;
     align-items: center;
-    margin-left: 10px;
+     margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -26,42 +28,48 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top:2px;
     border-radius: 8px;
     text-align: center;
     font-size: 25px;
-
 }
 
-h2 {
+.titulo {
     font-size: 20px;
     position: relative;
     right: 4px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
-
 }
 
 .logo {
     width: 45px;
     height: 45px;
     position: relative;
-    right: 4px;
-
+    right: 12px;
 }
 
 .carrito {
     width: 36px;
     height: 35px;
+    display: flex;
+    position:relative;
+    right: 0px;
+}
+
+.main-div2 {
+    display: flex;
 }
 
 .buscar {
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 8px;
+    width: 240px;
     height: 30px;
     position: relative;
-    left: 16px;
+    left: 20px;
+    border-style: none;
+    text-align:center;
+    
 }
 
 .boton {
@@ -69,5 +77,65 @@ h2 {
     width: 60px;
     height: 30px;
     position: relative;
-    left: 20px;
+    left: 40px;
+    border-style: none;
+}
+
+/* ------CAROUSEL----360px------ */
+
+.carousel-control-next{
+position: relative;
+left:305px;
+}
+
+.carousel-item {
+    margin:0 50px 0 0;
+    display: flex;
+    position:relative;
+    left:32%;
+}
+
+.carousel{
+     padding-bottom: 2.5rem; 
+} 
+
+.fondolibros{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.libros{
+    width: 130px;
+    height: 180px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+/* -------------------------------- */
+
+.botones-2{
+    display: flex;
+    justify-content:center;
+    
+    
+}
+
+.boton2{
+    text-transform: capitalize;
+    border-radius: 3px;
+    /* border-style: none; */
+    width: 80px;
+    height: 35px;
+    font-size: .8rem;
+    
+}
+
+
+@media (min-width: 768px) {
+    
 }
