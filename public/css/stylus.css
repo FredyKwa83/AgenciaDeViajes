@@ -1,24 +1,29 @@
 * {
     box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
+.body {
     font-family: "roboto";
+    max-width: 100%;
+    /* overflow-x: hidden; */
 }
 
 .main-header {
     background-color: #1D1D1D;
-    padding-bottom: 15px;
+    max-width: 100%;
+    width: 100vw;
+    height: 32vw;
 }
 
 .main-div1 {
     display: flex;
-    justify-content: space-between; 
-    padding: 10px;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+    max-width: 100%;
     align-items: center;
-     margin-left: 10px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -26,80 +31,61 @@ body {
     background-color: blueviolet;
     color: white;
     display: block;
-    width: 40px;
-    height: 40px;
-    padding-top:2px;
+    max-width: 100%;
+    width: 12%;
+    height: 40%;
+    padding-top: 2px;
     border-radius: 8px;
     text-align: center;
-    font-size: 25px;
+    font-size: 7vw;
 }
 
 .titulo {
-    font-size: 20px;
-    position: relative;
-    right: 4px;
+    font-size: 7vw;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-    position: relative;
-    right: 12px;
+    width: 18%;
 }
 
 .carrito {
-    width: 36px;
-    height: 35px;
-    display: flex;
-    position:relative;
-    right: 0px;
+    width: 14%;
 }
 
 .main-div2 {
+    padding-bottom: 1%;
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .buscar {
     border-radius: 8px;
-    width: 240px;
-    height: 30px;
-    position: relative;
-    left: 20px;
+    width: 70vw;
+    height: 7.5vw;
     border-style: none;
-    text-align:center;
-    
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .boton {
     border-radius: 6px;
-    width: 60px;
-    height: 30px;
+    width: 15vw;
+    height: 7.5vw;
     position: relative;
-    left: 40px;
+    left: 23px;
     border-style: none;
 }
 
-/* ------CAROUSEL----360px------ */
+/* --------CAROUSEL---480PX-------*/
 
-.carousel-control-next{
-position: relative;
-left:305px;
-}
-
-.carousel-item {
-    margin:0 50px 0 0;
-    display: flex;
-    position:relative;
-    left:32%;
-}
-
-.carousel{
-     padding-bottom: 2.5rem; 
-} 
-
-.fondolibros{
+.fondolibros {
     display: flex;
     position: absolute;
     z-index: -1;
@@ -107,35 +93,126 @@ left:305px;
     height: 100%;
 }
 
-.libros{
-    width: 130px;
-    height: 180px;
+.libros {
+    width: 35%;
     border: 5px solid white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
-    
+    position: relative;
+    left: 33%;
 }
 
-/* -------------------------------- */
+/* ---------BOTONES-NAVEGACION-480PX----------------------- */
 
-.botones-2{
+.botones-2 {
     display: flex;
-    justify-content:center;
-    
-    
+    justify-content: center;
 }
 
-.boton2{
+.boton2 {
     text-transform: capitalize;
     border-radius: 3px;
-    /* border-style: none; */
-    width: 80px;
-    height: 35px;
+    border-style: inset;
+    width: 22vw;
+    height: 8vw;
     font-size: .8rem;
-    
+    border-radius: 10px;
+    font-size: .9rem;
+}
+
+/* --------------------------------------------------------*/
+
+/* ---------lIBROS-A-LA-VENTA-480PX----------------------- */
+
+.fondo-div {
+    padding-top: 15px;
+    padding-bottom: 300px;
+    background-color: #1D1D1D;
+}
+
+.div-1 {
+    display: flex;
+}
+
+.libro-venta {
+    width: 33%;
+    height: 50%;
+    border: 5px solid white;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+.div-1 p {
+    color: white;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 3vw;
 }
 
 
-@media (min-width: 768px) {
-    
+
+/* -------ESTRELLAS-DE-CALIFICACION----------- */
+
+/* .clasificacion{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-right: 300px ;
+    font-size:6vw;
+    position: sticky;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+} */
+/* ------------------------------------------------- */
+
+.estrellas {
+    width: 28%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+}
+
+.comprar-boton {
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    width: 28vw;
+    height: 8vw;
+
 }
