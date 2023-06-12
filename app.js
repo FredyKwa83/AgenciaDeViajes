@@ -9,7 +9,7 @@ app.get('/page', (req, res) => {
 });
 
 
-app.listen(3002, function () {
+app.listen(3001, function () {
     console.log("Servidor corriendo");
 });
 

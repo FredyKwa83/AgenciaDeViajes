@@ -7,7 +7,6 @@
 .body {
     font-family: "roboto";
     max-width: 100%;
-    /* overflow-x: hidden; */
 }
 
 .main-header {
@@ -144,14 +143,12 @@
 
 .div-1 p {
     color: white;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
     font-size: 3vw;
 }
-
-
 
 /* -------ESTRELLAS-DE-CALIFICACION----------- */
 
@@ -201,18 +198,58 @@ input[type="radio"]:checked~label {
 } */
 /* ------------------------------------------------- */
 
+#precio{
+    color: white;
+    margin-top:none;
+    margin-left: 20px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+#descuento{
+    color: #fcf400;
+    font-weight: bold;
+    font-size: 4vw;
+    position: relative;
+    right:20px;
+}
+
+.etiqueta-oferta{
+    position:relative;
+    right: 20px;
+    top:10px;
+    width: 10vw;
+    height:10vw ;
+}
+
+.container-precio-descuento{
+    display: flex;
+    position: relative;
+    bottom:30px;
+}
+
 .estrellas {
     width: 28%;
     position: relative;
-    bottom: 20px;
+    bottom: 50px;
     left: 40px;
 }
 
 .comprar-boton {
     position: relative;
-    bottom: 20px;
-    left: 80px;
-    width: 28vw;
+    bottom: 50px;
+    left: 90px;
+    width: 40vw;
     height: 8vw;
+    font-weight: bold;
+}
 
+.carrito-boton-comprar{
+    width: 15%;
+    position: relative;
+    left: 18px;
+}
+
+.div-estrellas-boton-compra{
+    width:400px ;
 }
