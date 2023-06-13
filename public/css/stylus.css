@@ -253,3 +253,30 @@ input[type="radio"]:checked~label {
 .div-estrellas-boton-compra{
     width:400px ;
 }
+
+/*-----------------DETALLE PRODUCTO-----------------------*/
+
+.body-detalleProducto{
+    background-color: #1D1D1D ;
+    color: white;
+}
+.infoLibro{
+    text-align: start;
+    line-height: 2.3em;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5vw;
+}
+.imagenLibro{
+    height: 200px;
+    width: 140px;
+    padding: 0;
+    border: 5px solid white;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+.carrito-comprar{
+    width: 90%;
+    height: 9vw;
+    margin-top: 2.5vw;
+}
