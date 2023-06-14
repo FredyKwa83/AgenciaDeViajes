@@ -152,7 +152,7 @@
 
 /* -------ESTRELLAS-DE-CALIFICACION----------- */
 
-/* .clasificacion{
+ .clasificacion{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
@@ -195,7 +195,7 @@ label:hover~label {
 
 input[type="radio"]:checked~label {
     color: orange;
-} */
+} 
 /* ------------------------------------------------- */
 
 #precio{
