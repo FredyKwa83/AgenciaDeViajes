@@ -259,6 +259,7 @@ input[type="radio"]:checked~label {
 .body-detalleProducto{
     background-color: #1D1D1D ;
     color: white;
+    font-family: "roboto";
 }
 .infoLibro{
     text-align: start;
@@ -266,6 +267,19 @@ input[type="radio"]:checked~label {
     list-style-type: none;
     padding: 0;
     margin-top: 5vw;
+}
+.estrellas-detalleProducto{
+    position: relative;
+    bottom: 10vw;
+    width: 85%;
+    right: 4.5vw;
+
+}
+.estrellas-detalleProducto-padre{
+    height: 8vw;
+}
+.disponible{
+    color: #4fea8f;
 }
 .imagenLibro{
     height: 200px;
@@ -279,6 +293,14 @@ input[type="radio"]:checked~label {
     width: 90%;
     height: 9vw;
     margin-top: 2.5vw;
+    font-weight: bold
+}
+.sinopsis-detalleProducto{
+    padding: 5vw 8vw;
+    text-align: justify;
+}
+.comentarios-detalleProducto{
+    padding: 2vw 8vw;
 }
 /*-----------------register-----------------------*/
 
