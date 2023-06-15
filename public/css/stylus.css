@@ -306,6 +306,12 @@ input[type="radio"]:checked~label {
 
 
 
+.body-register{
+    background-color: #1D1D1D ;
+    color: white;
+    font-family: "roboto";
+}
+
 .register {
     display: flex;
     flex-direction: column;
@@ -315,18 +321,17 @@ input[type="radio"]:checked~label {
     margin: 0 auto;
     font-size: 1em;
     padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
+    box-sizing: border-box;    
     border-radius: 5px;
   }
   
-  .register label {
+.register label {
     margin-bottom: 5px;
     text-align: center;
     font-size: 1em;
   }
   
-  .register .control {
+.register .control {
     margin-bottom: 10px;
     width: 100%;
     padding: 5px;
@@ -336,14 +341,14 @@ input[type="radio"]:checked~label {
   }
   
   
-  .register .button-container {
+.register .button-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 1em;
   }
   
-  .register button {
+.register button {
     flex: 1;
     margin-top: 10px;
     padding: 10px 20px;
@@ -355,10 +360,13 @@ input[type="radio"]:checked~label {
     font-size: 1em;
   }
   
-  .register button[type="reset"] {
+.register button[type="reset"] {
     background-color: #f44336;
     font-size: 1em;
   }
-  .registerTitulo{
+.registerTitulo{
     text-align: center;
   }
+.logo {
+    width: 18%;
+}
