@@ -150,52 +150,6 @@
     font-size: 3vw;
 }
 
-/* -------ESTRELLAS-DE-CALIFICACION----------- */
-
-/* .clasificacion{
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-right: 300px ;
-    font-size:6vw;
-    position: sticky;
-}
-
-#form {
-    width: 250px;
-    margin: 0 auto;
-    height: 50px;
-}
-
-#form p {
-    text-align: center;
-}
-
-#form label {
-    font-size: 20px;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-label {
-    color: grey;
-}
-
-.clasificacion {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-}
-
-label:hover,
-label:hover~label {
-    color: orange;
-}
-
-input[type="radio"]:checked~label {
-    color: orange;
-} */
 /* ------------------------------------------------- */
 
 #precio{
@@ -228,6 +182,11 @@ input[type="radio"]:checked~label {
     bottom:30px;
 }
 
+.div-estrellas-boton{
+    display: flex;
+    position: relative;
+    top:20px
+}
 .estrellas {
     width: 28%;
     position: relative;
@@ -253,3 +212,4 @@ input[type="radio"]:checked~label {
 .div-estrellas-boton-compra{
     width:400px ;
 }
+
