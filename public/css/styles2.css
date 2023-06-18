@@ -117,7 +117,7 @@
 
 .cuerpo-container{
     width: 140px;
-    height: 130px;
+    height: 180px;
 }
 
 .cuerpo-imagen{
@@ -133,8 +133,8 @@
 
 }
 .imagen-libro{
-    width: 140px;
-    height: 180px;
+    width: 135px;
+    height: 175px;
 }
 
 .descripcion-cart{
@@ -144,6 +144,9 @@
     justify-content:space-between;
     width: 140px;
     height: 130px;
+}
+.cart-descripcion{
+    font-size: 18px;
 }
 
 .fa-paper-plane{
@@ -277,6 +280,9 @@
         justify-content: center;
         width: 600px;
         height: 350px;
+    }
+    .cart-descripcion{
+        font-size: 19px;
     }
 
     .cuerpo-cart-dos{
