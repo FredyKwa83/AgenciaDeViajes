@@ -290,7 +290,7 @@ input[type="radio"]:checked~label {
     margin-left: 5vw;
 }
 .carrito-comprar{
-    width: 70%;
+    width: 100%;
     height: 9vw;
     margin-top: 2.5vw;
     font-weight: bold;
@@ -310,6 +310,96 @@ input[type="radio"]:checked~label {
     border-radius: 6px;
     width: 100%;
 }
+
+@media (min-width: 1200px){
+    .hamburguer-button{
+        scale: 70%;
+    }
+
+    .titulo{
+        scale: 70%;
+        text-align: center;
+    }
+
+    .logo{
+        scale: 70%;
+
+    }
+
+    .carrito{
+        scale: 70%;
+    }
+
+    .buscar{
+        width: 82vw;
+        height: 6vh;
+    }
+
+    .boton{
+        width: 12vw;
+        height: 6vh;
+    }
+    
+    .main-header{
+        height: 20vw;
+    }
+
+    .imagenLibro{
+        margin-top: 175px;
+        margin-right: 50px;
+        height: 70%;
+        width: 80%;
+        text-align: left;
+    }
+    
+    .estrellas-detalleProducto{
+        scale: 50%;
+    }
+
+    .estrella-favorito{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+
+    .share-compartir{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+
+    .camion-compartir{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top: 2vw;
+        font-weight: bold;
+    }
+
+    .carrito-comprar{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+    }
+
+    .carrito-boton-comprar{
+        width: 5%;
+        position: relative;
+        left: 18px;
+    }
+
+    .sinopsis-detalleProducto{
+        font-size: xx-large;
+        text-align: center;
+        height: 20px;
+    }
+
+}
+
 /*-----------------register-----------------------*/
 
 
