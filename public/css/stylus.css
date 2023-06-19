@@ -234,7 +234,9 @@ input[type="radio"]:checked~label {
     bottom: 50px;
     left: 40px;
 }
-
+.lista-imagen-estrellas{
+    list-style-type: none;
+}
 .comprar-boton {
     position: relative;
     bottom: 50px;
@@ -296,6 +298,9 @@ input[type="radio"]:checked~label {
     font-weight: bold;
     border-radius: 6px;
 }
+.estrellas-desktop-detalleProducto{
+    display: none;
+}
 .sinopsis-detalleProducto{
     padding: 5vw 8vw;
     text-align: justify;
@@ -343,15 +348,18 @@ input[type="radio"]:checked~label {
     .main-header{
         height: 20vw;
     }
-
     .imagenLibro{
-        margin-top: 175px;
-        margin-right: 50px;
-        height: 70%;
-        width: 80%;
-        text-align: left;
+        height: auto;
+        width: 45%;
     }
-    
+    .estrellas-desktop-detalleProducto{
+        display: block;
+        width: 20%;
+        height: auto;
+        position: relative;
+        bottom: 12vw;
+        left: 4vw;
+    }
     .estrellas-detalleProducto{
         scale: 50%;
     }
@@ -360,7 +368,7 @@ input[type="radio"]:checked~label {
         height: 6vh;
         width: 35vw;
         border-radius: 6px;
-        margin-top: 2vw;
+        margin-top:1vw;
         font-weight: bold;
     }
 
@@ -368,7 +376,7 @@ input[type="radio"]:checked~label {
         height: 6vh;
         width: 35vw;
         border-radius: 6px;
-        margin-top: 2vw;
+        margin-top:1vw;
         font-weight: bold;
     }
 
@@ -376,7 +384,7 @@ input[type="radio"]:checked~label {
         height: 6vh;
         width: 35vw;
         border-radius: 6px;
-        margin-top: 2vw;
+        margin-top:1vw;
         font-weight: bold;
     }
 
@@ -384,6 +392,7 @@ input[type="radio"]:checked~label {
         height: 6vh;
         width: 35vw;
         border-radius: 6px;
+        margin-top: 1vw;
     }
 
     .carrito-boton-comprar{
@@ -391,11 +400,23 @@ input[type="radio"]:checked~label {
         position: relative;
         left: 18px;
     }
-
+    .estrellas-detalleProducto{
+       display: none;
+    }
+    .infoLibro{
+       position: relative;
+       bottom: 8.5vw;
+    }
     .sinopsis-detalleProducto{
-        font-size: xx-large;
-        text-align: center;
-        height: 20px;
+        font-size: 20px;
+        text-align: justify;
+        padding: 5vw 19.5vw 5vw 12.3vw ;
+        position: relative;
+        bottom: 12vw;
+    }
+    .comentarios-detalleProducto{
+       width: 70%;
+       padding-left: 12.7vw;
     }
 
 }
