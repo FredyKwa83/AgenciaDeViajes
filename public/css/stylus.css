@@ -39,6 +39,10 @@
     font-size: 7vw;
 }
 
+.main-navbar {
+    display: none;
+}
+
 .titulo {
     font-size: 7vw;
     color: rgb(255, 255, 255);
@@ -101,6 +105,7 @@
     left: 33%;
 }
 
+
 /* ---------BOTONES-NAVEGACION-480PX----------------------- */
 
 .botones-2 {
@@ -129,87 +134,627 @@
     background-color: #1D1D1D;
 }
 
-.div-1 {
-    display: flex;
+.caja {
+    width: 50%;
+    border-bottom: solid 2px #ebebeb;
 }
 
-.libro-venta {
-    width: 33%;
-    height: 50%;
+.precio-descuento {
+    display: flex;
+    justify-content: center;
+}
+
+.precio {
+    color: white;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 1vw;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+.descuento {
+    color: yellow;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 3vw;
+}
+
+.estrella {
+    width: 40%;
+}
+
+.estrella-centrada {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 3vw;
+}
+
+.imagen-producto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.producto {
+    width: 80%;
+    border: 5px solid white;
+}
+
+.descripcion {
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: justify;
+    font-size: 2.5vw;
+}
+
+.boton-comprar {
+    width: 35vw;
+    height: 7.5vw;
+    border-radius: 5px;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 5vw;
+}
+
+.boton-center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.carrito-boton-comprar {
+    width: 12%;
+}
+
+.producto2 {
+    margin-bottom: 1vw;
+}
+
+.producto4 {
+    height: 44%;
+}
+
+
+
+/* <<<<<<< HEAD
+======= */
+/*-----------------DETALLE PRODUCTO-----------------------*/
+
+.body-detalleProducto{
+    background-color: #1D1D1D ;
+    color: white;
+    font-family: "roboto";
+}
+.infoLibro{
+    text-align: start;
+    line-height: 2.3em;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5vw;
+}
+.estrellas-detalleProducto{
+    position: relative;
+    bottom: 10vw;
+    width: 85%;
+    right: 4.5vw;
+
+}
+.estrellas-detalleProducto-padre{
+    height: 8vw;
+}
+.disponible{
+    color: #4fea8f;
+}
+.imagenLibro{
+    height: 200px;
+    width: 140px;
+    padding: 0;
     border: 5px solid white;
     margin-top: 5vw;
     margin-left: 5vw;
 }
-
-.div-1 p {
-    color: white;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+.carrito-comprar{
+    width: 90%;
+    height: 9vw;
+    margin-top: 2.5vw;
+    font-weight: bold
+}
+.sinopsis-detalleProducto{
+    padding: 5vw 8vw;
     text-align: justify;
+}
+.comentarios-detalleProducto{
+    padding: 2vw 8vw;
+}
+/*-----------------register-----------------------*/
+
+.body-register{
+    background-color:whitesmoke;
+    color: rgb(249, 249, 249);
+    font-family: "roboto";
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;    
+    border-radius: 5px;
+  }
+  
+.register label {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+.register .control {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  
+  
+.register .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+.register button {
+    flex: 1;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#1259c3;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+.register button[type="reset"] {
+    background-color: #f44336;
+    font-size: 1em;
+  }
+.registerTitulo{
+    text-align: center;
+    padding-top: 20px;
+  }
+.logo {
+    width: 18%;
+}
+
+.formulario-principal{
+    background-color: #1d1d1d;
+    padding: 2%;
+    margin:50px;
+    border-radius: 8px;
+}
+/* >>>>>>> ef821ff08179c258846d609aca89ba44b2a6909c */
+
+/* ---------- pantallas--481-768--px---- */
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    /* ------HEADER-NAVBAR-481PX--768PX-----*/
+
+.main-header {
+    background-color: #1D1D1D;
+    max-width: 100%;
+    width: 100vw;
+    height: 27.5vw;
+}
+
+.hamburguer-button{
+    display:none;
+}
+.titulo {
+    position: relative;
+    left: 10.5vw;
+    font-size: 6.3vw;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding-top: 3vw; 
+}
+
+.logo {
+    position:relative;
+    right: 58vw;
+    width: 12%;
+    bottom: 1vw;
+    padding-top: 3vw;  
+}
+
+.carrito {
+    width: 0%;
+}
+
+.buscar {
+    position: relative;
+    left: 46vw;
+    bottom: 9vw;
+    border-radius: 4px;
+    width: 37vw;
+    height: 5vw;
+    border-style: none;
+    text-align: center; 
+}
+
+.boton {
+    border-radius: 4px;
+    width: 8.5vw;
+    height: 5vw;
+    position: relative;
+    left:48vw;
+    bottom: 9vw;
+    border-style: none;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:7vw;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navbar li {
+    margin: 1.5vw;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     font-size: 3vw;
 }
 
-/* ------------------------------------------------- */
+.login{
+    width: 3.5%;
+    position: absolute;
+    z-index: 1;
+    bottom: 4.5vw;
+    right: 49vw ;
+}
 
-#precio{
+.ingresar{
+    width: 3.5%;
+    position: absolute;
+    z-index: 1;
+    bottom: 4.5vw;
+    right: 28vw;
+}
+
+.carrito-comprador{
+    width: 3.5%;
+    position: absolute;
+    z-index: 1;
+    bottom: 4.5vw;
+    right: 9vw;
+}
+
+/* ------MAIN--DIV--TODOS-LOS-LIBROS-481PX--768PX---*/
+
+.caja {
+    width: 33%;
+    border-bottom: solid 2px #ebebeb;
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.precio {
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+
+.descuento {
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.estrella {
+    width: 50%;
+}
+
+.estrella-centrada {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 2vw;
+}
+
+.imagen-producto {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+}
+
+.descripcion {
     color: white;
-    margin-top:none;
-    margin-left: 20px;
-    font-size: 4vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+    font-size: 2.5vw;
+}
+
+.boton-comprar {
+    width: 25vw;
+    height: 6vw;
+    border-radius: 5px;
+    font-size: 2.5vw;
     font-weight: bold;
+    margin-bottom: 5vw;
 }
 
-#descuento{
-    color: #fcf400;
-    font-weight: bold;
-    font-size: 4vw;
-    position: relative;
-    right:20px;
+.container {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.etiqueta-oferta{
-    position:relative;
-    right: 20px;
-    top:10px;
-    width: 10vw;
-    height:10vw ;
+.carrito-boton-comprar {
+    width: 12%;
 }
 
-.container-precio-descuento{
-    display: flex;
-    position: relative;
-    bottom:30px;
+.producto2 {
+    margin-bottom: 0vw;
 }
 
-.div-estrellas-boton{
-    display: flex;
-    position: relative;
-    top:20px
-}
-.estrellas {
-    width: 28%;
-    position: relative;
-    bottom: 50px;
-    left: 40px;
+.producto3 {
+    height: 100%;
+    margin-bottom: 4vw;
 }
 
-.comprar-boton {
-    position: relative;
-    bottom: 50px;
-    left: 90px;
-    width: 40vw;
-    height: 8vw;
-    font-weight: bold;
+.producto4 {
+    height: 30%;
 }
 
-.carrito-boton-comprar{
-    width: 15%;
-    position: relative;
-    left: 18px;
 }
 
-.div-estrellas-boton-compra{
-    width:400px ;
+@media (min-width: 769px) and (max-width: 1279px) {
+
+/* ------HEADER--NAVBAR-------------------*/
+
+.main-header {
+        background-color: #1D1D1D;
+        max-width: 100%;
+        width: 100vw;
+        height: 27.5vw;
+    }
+
+.hamburguer-button {
+        display: none;
+    }
+
+.titulo {
+        position: relative;
+        left: 11vw;
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        padding-top: 2.8vw;
+    }
+
+.logo {
+        position: relative;
+        right: 58vw;
+        width: 12%;
+        bottom: 1vw;
+        padding-top: 3vw;
+    }
+
+.carrito {
+        width: 0%;
+    }
+
+.buscar {
+        position: relative;
+        left: 44vw;
+        bottom: 7vw;
+        border-radius: 4px;
+        width: 37vw;
+        height: 4.5vw;
+        border-style: none;
+        text-align: center;
+        font-size:2vw;
+    }
+
+.boton {
+        border-radius: 4px;
+        width: 8.5vw;
+        height: 4.5vw;
+        position: relative;
+        left: 46vw;
+        bottom: 7vw;
+        border-style: none;
+        font-size: 2vw;
+    }
+
+.main-navbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 5vw;
+    }
+
+.main-navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+.main-navbar li {
+        margin: 1.5vw;
+    }
+
+.main-navbar a {
+        text-decoration: none;
+        color: #ffffff;
+        display: inline-block;
+        margin-top: 1.5vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        font-size: 3vw;
+    }
+
+.login {
+        width: 3.5%;
+        position: absolute;
+        z-index: 1;
+        bottom: 4.5vw;
+        right: 49vw;
+    }
+
+.ingresar {
+        width: 3.5%;
+        position: absolute;
+        z-index: 1;
+        bottom: 4.5vw;
+        right: 28vw;
+    }
+
+.carrito-comprador {
+        width: 3.5%;
+        position: absolute;
+        z-index: 1;
+        bottom: 4.5vw;
+        right: 9vw;
+    }
+
+
+/* ------BOTONES-MENU-BUSQUEDAD---769px--1279px--------*/
+
+    .boton2 {
+        margin-top: 2vw;
+        font-size: 2vw;
+        font-weight: bold;
+        height: 6vw;
+    }
+
+
+/* ------MAIN--DIV--TODOS-LOS-LIBROS-769px--1279px---*/
+
+    .caja {
+        width: 25%;
+        border-bottom: solid 2px #ebebeb;
+    }
+
+    .container {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .precio {
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        margin-right: 0vw;
+    }
+
+    .descuento {
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        margin-right: 0vw;
+    }
+
+    .estrella {
+        width: 60%;
+    }
+
+    .estrella-centrada {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: .5vw;
+    }
+
+    .imagen-producto {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vw;
+    }
+
+    .descripcion {
+        color: white;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        text-align: justify;
+        font-size: 1.5vw;
+    }
+
+    .boton-comprar {
+        width: 18vw;
+        height: 4vw;
+        border-radius: 5px;
+        font-size: 1.8vw;
+        font-weight: bold;
+        margin-bottom: 2vw;
+    }
+
+    .container {
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carrito-boton-comprar {
+        width: 16%;
+    }
+
+    .producto2 {
+        margin-bottom: 0vw;
+    }
+
+    .producto3 {
+        height: 100%;
+        margin-bottom: 9.5vw;
+    }
+
+    .producto4 {
+        height: 32.8%;
+    }
+
 }
+
+
+
 

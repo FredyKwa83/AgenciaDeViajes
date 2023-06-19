@@ -8,8 +8,15 @@ app.get('/page', (req, res) => {
     res.sendFile((__dirname + '/views/index.html'));
 });
 
+app.get('/register', (req, res) => {
+    res.sendFile((__dirname + '/views/register.html'));
+});
 
-app.listen(3001, function () {
+app.get('/producto', (req, res) => {
+    res.sendFile((__dirname + '/views/detalleProducto.html'));
+});
+
+app.listen(3009, function () {
     console.log("Servidor corriendo");
 });
 
