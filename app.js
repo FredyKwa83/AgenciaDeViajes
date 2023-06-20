@@ -20,6 +20,10 @@ app.get('/cart', (req, res) => {
     res.sendFile((__dirname + '/views/cart.html'));
 });
 
+app.get('/login', (req, res) => {
+    res.sendFile((__dirname + '/views/login.html'));
+});
+
 /**bootstrap */
 app.use("/css",express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")))
 
