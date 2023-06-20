@@ -418,6 +418,7 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 1em;
+    color:white;
   }
   
 .register .control {
@@ -456,7 +457,9 @@
 .registerTitulo{
     text-align: center;
     padding-top: 20px;
+    color:white;
   }
+
 .logo {
     width: 18%;
 }
