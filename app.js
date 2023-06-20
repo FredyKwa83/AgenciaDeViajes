@@ -16,7 +16,17 @@ app.get('/producto', (req, res) => {
     res.sendFile((__dirname + '/views/detalleProducto.html'));
 });
 
-app.listen(3009, function () {
+app.get('/cart', (req, res) => {
+    res.sendFile((__dirname + '/views/cart.html'));
+});
+
+/**bootstrap */
+app.use("/css",express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")))
+
+app.use("/js",express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")))
+/**bootstrap  */
+
+app.listen(3001, function () {
     console.log("Servidor corriendo");
 });
 

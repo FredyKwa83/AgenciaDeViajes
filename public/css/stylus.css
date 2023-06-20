@@ -225,8 +225,8 @@
 
 
 
-/* <<<<<<< HEAD
-======= */
+/* ------------------------------------------------- */
+
 /*-----------------DETALLE PRODUCTO-----------------------*/
 
 .body-detalleProducto{
@@ -263,10 +263,14 @@
     margin-left: 5vw;
 }
 .carrito-comprar{
-    width: 90%;
+    width: 100%;
     height: 9vw;
     margin-top: 2.5vw;
-    font-weight: bold
+    font-weight: bold;
+    border-radius: 6px;
+}
+.estrellas-desktop-detalleProducto{
+    display: none;
 }
 .sinopsis-detalleProducto{
     padding: 5vw 8vw;
@@ -275,6 +279,119 @@
 .comentarios-detalleProducto{
     padding: 2vw 8vw;
 }
+.textarea-detalleProducto{
+    background-color: transparent;
+    color: white;
+    border:solid;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* @media (min-width: 1200px){
+    .hamburguer-button{
+        scale: 70%;
+    }
+
+    .titulo{
+        scale: 70%;
+        text-align: center;
+    }
+
+    .logo{
+        scale: 70%;
+
+    }
+
+    .carrito{
+        scale: 70%;
+    }
+
+    .buscar{
+        width: 82vw;
+        height: 6vh;
+    }
+
+    .boton{
+        width: 12vw;
+        height: 6vh;
+    }
+    
+    .main-header{
+        height: 20vw;
+    }
+    .imagenLibro{
+        height: auto;
+        width: 45%;
+    }
+    .estrellas-desktop-detalleProducto{
+        display: block;
+        width: 20%;
+        height: auto;
+        position: relative;
+        bottom: 12vw;
+        left: 4vw;
+    }
+    .estrellas-detalleProducto{
+        scale: 50%;
+    }
+
+    .estrella-favorito{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top:1vw;
+        font-weight: bold;
+    }
+
+    .share-compartir{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top:1vw;
+        font-weight: bold;
+    }
+
+    .camion-compartir{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top:1vw;
+        font-weight: bold;
+    }
+
+    .carrito-comprar{
+        height: 6vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin-top: 1vw;
+    }
+
+    .carrito-boton-comprar{
+        width: 5%;
+        position: relative;
+        left: 18px;
+    }
+    .estrellas-detalleProducto{
+       display: none;
+    }
+    .infoLibro{
+       position: relative;
+       bottom: 8.5vw;
+    }
+    .sinopsis-detalleProducto{
+        font-size: 20px;
+        text-align: justify;
+        padding: 5vw 19.5vw 5vw 12.3vw ;
+        position: relative;
+        bottom: 12vw;
+    }
+    .comentarios-detalleProducto{
+       width: 70%;
+       padding-left: 12.7vw;
+    }
+
+} */
+
 /*-----------------register-----------------------*/
 
 .body-register{
@@ -350,7 +467,7 @@
     margin:50px;
     border-radius: 8px;
 }
-/* >>>>>>> ef821ff08179c258846d609aca89ba44b2a6909c */
+
 
 /* ---------- pantallas--481-768--px---- */
 
@@ -374,7 +491,8 @@
     font-size: 6.3vw;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
-    padding-top: 3vw; 
+    padding-top: 3vw;
+    
 }
 
 .logo {
