@@ -879,14 +879,14 @@
 
 footer {
     width: 100%;
-    padding: 50px 0px;
+    padding: 35px 0px;
     background-image: url(../img/background-footer.svg);
     background-size: cover;
     background-color: #1D1D1D;
 
 }
 .baner{
-    width: 100%;
+    width: 95%;
 }
 .container__footer {
     display: flex;
@@ -985,6 +985,55 @@ a:visited {
     background-color: #7a7a7a;
 }
 
+/* _______________________footer__360__celular__________ */
+
+@media screen and (max-width:800px) {
+
+    .container__footer {
+        display: flex;
+        line-height: 13px;
+        width: 100%;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .box__footer {
+        display: flex;
+        padding: 0px;
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box__footer h2 {
+        margin-bottom: 10px;
+        color: #343434;
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .box__footer a {
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 600px;
+        font-size: 13px;
+    }
+
+    .medios_pagos {
+        width: 150px;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .box__copyright p {
+        font-size: 13px;
+    }
+
+    .baner {
+               margin-left: 15px;
+        margin-right: 10px;
+    }
+}
 
 
 
