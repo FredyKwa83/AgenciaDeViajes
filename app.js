@@ -2,27 +2,16 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const router = require('./src/routes/indexRouter');
+const router1 = require('./src/routes/userRouter');
+
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.get('/page', (req, res) => {
-    res.sendFile((__dirname + '/views/index.html'));
-});
+app.set('view engine', 'ejs');
 
-app.get('/register', (req, res) => {
-    res.sendFile((__dirname + '/views/register.html'));
-});
+app.use(router);
+app.use(router1);
 
-app.get('/producto', (req, res) => {
-    res.sendFile((__dirname + '/views/detalleProducto.html'));
-});
-
-app.get('/cart', (req, res) => {
-    res.sendFile((__dirname + '/views/cart.html'));
-});
-
-app.get('/login', (req, res) => {
-    res.sendFile((__dirname + '/views/login.html'));
-});
 
 /**bootstrap */
 app.use("/css",express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")))
