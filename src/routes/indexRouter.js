@@ -6,7 +6,6 @@ const controller = require('../controllers/indexController');
 
 router.get('/', controller.index );
 
-
 router.get('/producto', controller.detalledeProducto );
 
 router.get('/cart', controller.cart);
