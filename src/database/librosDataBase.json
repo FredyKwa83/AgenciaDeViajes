@@ -1,0 +1,53 @@
+[
+    {
+     "id": 1,
+     "titulo":"Habla menos, actua más - Brian Tracy",
+     "precio": 75.000,
+     "descuento": 10,
+     "genero": "Educacion",
+     "estado" : "disponible",
+     "descripcion":  "El experto en éxito y autor bestseller de The New York Times, Brian Tracy, comparte un método probado de siete pasos que te ayudarán a conseguir, en pocos meses, más de lo que la mayoría de las personas logra en toda su vida.",
+     "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/46/f3/46f34f8b0f72e8b3ab0a7ecdaccce9ce.jpg"
+    },
+    {
+     "id": 2,
+     "titulo": "El Milagro Metabolico - Dr. Carlos Jaramillo",
+     "precio": 105.000,
+     "descuento": 25,
+     "genero": "Motivacion",
+     "estado" : "disponible",
+     "descripcion": "Engañados por la industria alimentaria, la publicidad, las fake news gastronómicas y los consejos nutricionales de la tía Bertha, con cada bocado tomamos decisiones nefastas que nos enferman, nos engordan y nos roban energía. ¿Cómo detener esta espiral? ¿A quién creerle y a quién no?" ,
+     "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/ea/a5/eaa593b5d5b4a4576330a40fa29372da.jpg"
+    },
+    {
+     "id": 3,
+     "titulo": "Todos somos genios - Andrew Maltés, José Arturo Torres",
+     "precio": 95.000,
+     "descuento": 20,
+     "genero": "Infantil",
+     "estado" : "disponible",
+     "descripcion": "Todos los años desde 1901 un grupo de personas notables de la sociedad sueca elige a un hombre o a una mujer cuyos descubrimientos, investigaciones o innovaciones dentro de sus áreas de conocimiento generaron importantes aportes para el avance de la humanidad." ,
+     "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/1e/ea/1eea1c246bd0aab1035668aaec72bbf0.jpg"
+    },
+    {
+     "id": 4,
+     "titulo": "Transforma las heridas de tu infancia - Anamar Orihuela",
+     "precio": 45.000,
+     "descuento": 15,
+     "genero": "Ficcion",
+     "estado" : "disponible",
+     "descripcion": "Explica cómo se manifiestan, en qué etapa de nuestra vida afectan nuestros sentimientos, qué antídotos son efectivos para sanar las heridas y cómo trascender las relaciones padre-niño para aliviar, tener seguridad y vivir en confianza y armonía.",
+     "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/6d/b8/6db8c3ac7be12d774bc018f53e99d323.jpg"
+    },
+    {
+     "id": 5,
+     "titulo": "Introducció al Psicoanálisis - Sigmund Freud",
+     "precio": 200.000,
+     "descuento": 15,
+     "genero": "Educacion",
+     "estado" : "disponible",
+     "descripcion": "Explica cómo se manifiestan, en qué etapa de nuestra vida afectan nuestros sentimientos, qué antídotos son efectivos para sanar las heridas y cómo trascender las relaciones padre-niño para aliviar, tener seguridad y vivir en confianza y armonía." ,
+     "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/a3/5d/a35d90ab325ce95ac1eb3ab1775c04f6.jpg"
+    }
+   
+   ]

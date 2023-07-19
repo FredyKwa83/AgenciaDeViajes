@@ -114,25 +114,25 @@
         </div>
 
 <div class="container">
-    <section class="caja">
 
-        <div class="imagen-producto">
-            <img class="producto"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/46/f3/46f34f8b0f72e8b3ab0a7ecdaccce9ce.jpg"
-                alt="">
+    <% for( let i = 0; i < libros.length; i++ ) { %>
+        <section class="caja">
+       
+            <a href="/producto/<%=libros[i].id%>">
+                <div class="imagen-producto">               
+                   <img class="producto"
+                       src="<%= libros[i].imagen %>"
+                       alt="">
         </div>
         <div class="precio-descuento">
-            <p class="precio"> $ 75.000 </p>
-            <p class="descuento"> -10% </p>
+            <p class="precio"> $ <%= libros[i].precio %> </p>
+            <p class="descuento"> <%= libros[i].precio %>% </p>
         </div>
         <div class="estrella-centrada">
             <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
         </div>
 
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy
-            fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como son los actos fallido</p>
+        <p class="descripcion"><%= libros[i].descripcion %></p>
 
         <div class="boton-center">
             <button class="boton-comprar"> Comprar <img class="carrito-boton-comprar" src="/img/carro2.png"
@@ -140,209 +140,7 @@
         </div>
 
     </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto">
-            <img class="producto producto2"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/ea/a5/eaa593b5d5b4a4576330a40fa29372da.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 105.000 </p>
-            <p class="descuento"> -25% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido </p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar
-                <img class="carrito-boton-comprar" src="/img/carro2.png" alt="">
-            </button></a>
-        </div>
-
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto">
-            <img class="producto"
-                src="https://images.cdn2.buscalibre.com/fit-in/360x360/1e/ea/1eea1c246bd0aab1035668aaec72bbf0.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 95.000 </p>
-            <p class="descuento"> -20% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido</p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar <img class="carrito-boton-comprar" src="/img/carro2.png"
-                    alt=""></button>
-        </div>
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto producto4">
-            <img class="producto producto3"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/6d/b8/6db8c3ac7be12d774bc018f53e99d323.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 45.000 </p>
-            <p class="descuento"> -15% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido</p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar
-                <img class="carrito-boton-comprar" src="/img/carro2.png" alt="">
-            </button>
-        </div>
-
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto">
-            <img class="producto"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/46/f3/46f34f8b0f72e8b3ab0a7ecdaccce9ce.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 75.000 </p>
-            <p class="descuento"> -10% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido</p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar <img class="carrito-boton-comprar" src="/img/carro2.png"
-                    alt=""></button>
-        </div>
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto">
-            <img class="producto producto2"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/ea/a5/eaa593b5d5b4a4576330a40fa29372da.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 105.000 </p>
-            <p class="descuento"> -25% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido </p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar
-                <img class="carrito-boton-comprar" src="/img/carro2.png" alt="">
-            </button>
-        </div>
-
-
-    </section>
-
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto">
-            <img class="producto"
-                src="https://images.cdn2.buscalibre.com/fit-in/360x360/1e/ea/1eea1c246bd0aab1035668aaec72bbf0.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 95.000 </p>
-            <p class="descuento"> -20% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido
-        </p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar <img class="carrito-boton-comprar" src="/img/carro2.png"
-                    alt=""></button>
-        </div>
-
-    </section>
-
-    <section class="caja">
-
-        <div class="imagen-producto producto4">
-            <img class="producto producto3"
-                src="https://images.cdn1.buscalibre.com/fit-in/360x360/6d/b8/6db8c3ac7be12d774bc018f53e99d323.jpg"
-                alt="">
-        </div>
-        <div class="precio-descuento">
-            <p class="precio"> $ 45.000 </p>
-            <p class="descuento"> -15% </p>
-        </div>
-        <div class="estrella-centrada">
-            <img class="estrella" src="/img/estrellas-sin-fondo.png" alt="">
-        </div>
-
-        <p class="descripcion">Este libro nos habla sobre lo que es el psicoanálisis muy en general pero de una manera
-            muy fácil de comprender de lo que versa el libro este libro nos habla de las tres temas fundamentales del
-            psicoanálisis como
-            son los actos fallido</p>
-
-        <div class="boton-center">
-            <button class="boton-comprar"> Comprar
-                <img class="carrito-boton-comprar" src="/img/carro2.png" alt="">
-            </button>
-        </div>
-
-
-    </section>
-
-
+    <% } %>
 </div>
 
 
