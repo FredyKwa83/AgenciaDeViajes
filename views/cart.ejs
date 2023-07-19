@@ -58,13 +58,12 @@
             <div class="cuerpo-cart-dos">
             <article class="cuerpo-container cuerpo-imagen">
                 <div class="conteiner-img">
-                    <img class="imagen-libro" src="https://images.cdn1.buscalibre.com/fit-in/360x360/a3/5d/a35d90ab325ce95ac1eb3ab1775c04f6.jpg">
+                    <img class="imagen-libro" src="<%=libros.imagen%>">
                 </div>
             </article>
             <article class="cuerpo-container">
                 <div class="descripcion-cart">
-                    <h3 class="cart-descripcion">Titulo: Introducción al Psicoanálisis</h3>
-                    <h5 class="cart-descripcion" >Autor: Sigmund Freud</h5>
+                    <h3 class="cart-descripcion">Titulo: <%=libros.titulo%></h3>
                     <h6><i class="fa-regular fa-paper-plane"></i>  Entrega</h6>
                 </div>
             </article>
@@ -72,14 +71,14 @@
             <div class="cuerpo-cart-dos conteiner-precio-subtotal">
             <article class="cuerpo-container  conteiner-pr-sub">
                 <div class="cuerpo-cantidad ">
-                    <h4 class="precio-cantidad">Precio: $91.900</h4>
+                    <h4 class="precio-cantidad">Precio: $<%=libros.precio%></h4>
                     <h5 class="precio-cantidad">Cantidad: <input type="number" id="tentacles" name="tentacles" min="0" max="10"></h5>
                 </div>
             </article>
             <article class="cuerpo-container cuerpo-compra  conteiner-pr-sub">
                     <div class="compra">
                         <div class="subtotal">
-                            <h5 class="precio-cantidad">Subtotal: $ 0.00</h5>
+                            <h5 class="precio-cantidad">Subtotal: $ <%=libros.precio - (libros.descuento * libros.precio / 100) %></h5>
                         </div>
                         <div class="finaliza">
                             <button class="button-finalizar" type="submit">Finalizar Compra</button>
@@ -90,9 +89,9 @@
 
         </section>
     </main>
-    <footer>
+    <!--<footer>-->
         <%- include('./partials/footer') %>
-    </footer>
+    <!--</footer>-->
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

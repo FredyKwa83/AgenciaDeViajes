@@ -18,13 +18,18 @@ const controller ={
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
         libros = libros.find(libro => libro.id == id);
         if (libros){
-        res.render('detalleProducto', {libros});
+        res.render('detalleProducto', {libros: libros});
         }
     },
 
     cart : (req, res) => {
         //res.sendFile((__dirname + '/views/cart.html'));
-        res.render('cart');
+        let id = req.params.id;
+        libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+        libros = libros.find(libro => libro.id == id);
+        if (libros){
+        res.render('cart', {libros: libros});
+        }
     },
 
     getEdit : (req, res) => {
