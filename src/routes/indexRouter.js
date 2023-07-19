@@ -13,6 +13,8 @@ router.get('/cart', controller.cart);
 router.get ('/edit/:id', controller.getEdit);
 router.put ('/edit/:id', controller.putEdit);
 
+router.delete("/delete/:id", controller.delete)
+
 
 
 module.exports = router;

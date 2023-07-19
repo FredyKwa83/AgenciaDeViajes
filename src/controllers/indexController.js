@@ -57,6 +57,18 @@ const controller ={
 
         res.redirect ('/')
         
+    },
+
+    delete : (req, res) => {
+        let id = req.params.id;
+        libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+
+        let arregloProductos = libros.filter(function(e){
+            return e.id!=id
+        });
+
+        fs.writeFileSync(librosFilePath, JSON.stringify(arregloProductos, null, ' '));
+        res.redirect("/");
     }
 }
 module.exports = controller;

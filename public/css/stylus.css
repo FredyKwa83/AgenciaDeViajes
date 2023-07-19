@@ -287,6 +287,10 @@
     width: 100%;
 }
 
+.boton-delete{
+    width: 100%;
+}
+
 /* @media (min-width: 1200px){
     .hamburguer-button{
         scale: 70%;

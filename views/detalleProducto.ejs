@@ -28,6 +28,9 @@
               <li><button class="container text-center camion-compartir"> Calcular envio  <i class="fa-sharp fa-solid fa-truck-fast camion-boton-compartir" style="color: #d56a07;"></i></button>
               <li><a href="/cart"><button class="container text-center carrito-comprar"> Comprar  <img class="carrito-boton-comprar" src="/img/carro2.png" alt=""></button></a></li>
               <li><a href="/edit/<%=libros.id%>"><button class="container text-center carrito-comprar"> editar producto</button></a></li>
+              <form action="/delete/<%=libros.id%>?_method=DELETE" method="POST" style="display: inline-flex;" class="boton-delete">
+                <button type="submit" class="container text-center carrito-comprar">Eliminar</button>
+              </form>
             </ul> 
           </div>
         </div>

@@ -38,10 +38,10 @@
  {
   "id": 5,
   "titulo": "Introducció al Psicoanálisis - Sigmund Freud",
-  "precio": 200,
-  "descuento": 15,
+  "precio": "200",
+  "descuento": "15",
   "genero": "Educacion",
-  "descripcion": "Explica cómo se manifiestan, en qué etapa de nuestra vida afectan nuestros sentimientos, qué antídotos son efectivos para sanar las heridas y cómo trascender las relaciones padre-niño para aliviar, tener seguridad y vivir en confianza y armonía.",
+  "descripcion": "  Explica cómo se manifiestan, en qué etapa de nuestra vida afectan nuestros sentimientos, qué antídotos son efectivos para sanar las heridas y cómo trascender las relaciones padre-niño para aliviar, tener seguridad y vivir en confianza y armonía.\"\"",
   "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/a3/5d/a35d90ab325ce95ac1eb3ab1775c04f6.jpg"
  }
 ]
