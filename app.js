@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const router = require('./src/routes/indexRouter');
-const router1 = require('./src/routes/userRouter');
+const indexRouter = require('./src/routes/indexRouter');
+const userRouter = require('./src/routes/userRouter');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('view engine', 'ejs');
 
-app.use(router);
-app.use(router1);
+app.use(indexRouter);
+app.use(userRouter);
 
 
 /**bootstrap */

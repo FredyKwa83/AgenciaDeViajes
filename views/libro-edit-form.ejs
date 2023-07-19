@@ -36,17 +36,42 @@
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Genero:</label>
-						<select name="genero" id="category" class="form-control" value="<%= libros.genero %>">
+						<select name="genero" id="category" value="<%= libros.genero %>" class="form-control">
 							<option value="">Elegí</option>
-							<option value="Educacion">Educación</option>
+
+                            <% if (libros.genero == "Educacion") { %>
+
+							<option value="Educacion" selected> Educación</option>
 							<option value="Motivacion">Motivación</option>
                             <option value="Infantil">Infantil</option>
                             <option value="Ficcion">Ficción</option>
+
+                            <% } else if (libros.genero == "Motivacion"){ %>
+
+                            <option value="Educacion"> Educación</option>
+                            <option value="Motivacion" selected>Motivación</option>
+                            <option value="Infantil">Infantil</option>
+                            <option value="Ficcion">Ficción</option>
+                            
+                            <% } else if (libros.genero == "Infantil"){ %>
+
+                            <option value="Educacion"> Educación</option>
+                            <option value="Motivacion">Motivación</option>
+                            <option value="Infantil" selected>Infantil</option>
+                            <option value="Ficcion">Ficción</option>
+
+                            <% } else if (libros.genero == "Ficcion"){ %>
+
+                            <option value="Educacion"> Educación</option>
+                            <option value="Motivacion" >Motivación</option>
+                            <option value="Infantil">Infantil</option>
+                            <option value="Ficcion" selected>Ficción</option>
+                            <% } %>
 						</select>
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Descipción:</label>
-				<textarea name="descripcion" id="description" class="form-control"></textarea>
+				<textarea name="descripcion" id="description" class="form-control"> <%= libros.descripcion %>"</textarea>
             </div>
             <div class="mb-3">
                 <label for="name" class="form-label">Imagen:</label>
