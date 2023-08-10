@@ -2,6 +2,8 @@ const { log } = require('console');
 const fs = require('fs');
 const path = require('path');
 
+const { validationResult } = require ('express-validator');
+
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
 let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 
@@ -12,6 +14,17 @@ const controller ={
         //res.sendFile((__dirname + '/views/register.html'));
         res.render('register');
     },
+
+	registerPOST: (req, res) => {
+		let errors = validationResult(req);
+
+		if (errors.isEmpty){
+			//logica
+		}
+		else {
+			res.render ('/register', {errors: errors.array()});
+		}
+	},
 
     login :(req, res) => {
         //res.sendFile((__dirname + '/views/login.html'));

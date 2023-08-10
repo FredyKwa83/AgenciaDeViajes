@@ -27,7 +27,14 @@
 
 
         <label for="nombre"></label>
-        <input type="text" placeholder="Nombre" name="nombre" required class="control"><br>
+        <input type="text" placeholder="Nombre" name="nombre" required class="control">
+        <% if (locals && locals.errors){ %>
+            <% if (locals.errors[0].param == "nombre"){ %>
+                <h3 style="color: red;"> <%= locals.errors[0].msg %> </h3>
+           <% } %>
+
+        <% } %>
+        <br>
 
         <label for="Apellido"></label>
         <input type="text" placeholder="Apellido" name="Apellido" required class="control"><br>
