@@ -4,8 +4,13 @@ const path = require('path');
 
 const { validationResult } = require ('express-validator');
 
+const bcrypt = require ('bcryptjs');
+
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
 let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+
+const usuariosFilePath = path.join(__dirname, "../database/usuarios.json");
+let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
 
 const controller ={
@@ -19,7 +24,28 @@ const controller ={
 		let errors = validationResult(req);
 
 		if (errors.isEmpty){
-			//logica
+					
+			let idNuevoUsuario = (usuarios[usuarios.length-1].id)+1; 
+
+			let passwordEncriptada = bcrypt.hashSync (req.body.password, 10)
+	
+			let objNuevoUsuario = {
+				id: idNuevoUsuario,
+				nombre: req.body.nombre,
+				Apellido: req.body.Apellido,
+				username: req.body.username,
+				email: req.body.email,
+				fechaNacimiento: req.body.fechaNacimiento,
+				pais: req.body.pais,
+				genero: req.body.genero,
+				password: passwordEncriptada
+			}
+	
+			usuarios.push(objNuevoUsuario);
+	
+			fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios,null,' '));
+	
+			res.redirect('/'); // manda el producto al index
 		}
 		else {
 			res.render ('/register', {errors: errors.array()});
