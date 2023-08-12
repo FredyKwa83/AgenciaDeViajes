@@ -8,5 +8,15 @@
   "pais": "Argentina",
   "genero": "otro",
   "password": "$2a$10$XZbh8Cq1pZWD6wvyz94k4ucb3GwIm28ZoY9ayVICX/GO.QmM.MCbS"
+ },
+ {
+  "id": 2,
+  "nombre": "Constanza",
+  "Apellido": "Druetta",
+  "username": "coti123",
+  "email": "cotidruetta1@gmail.com",
+  "pais": "Argentina",
+  "genero": "Femenino",
+  "password": "$2a$10$oTUjxtRSfJVN9AlAtHWiUO61ogcW.QSsNVLqd9lt.zy5eRB5BSv9i"
  }
 ]

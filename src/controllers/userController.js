@@ -56,6 +56,22 @@ const controller ={
         //res.sendFile((__dirname + '/views/login.html'));
         res.render('login');
     },
+
+	loginPost : (req, res) => {
+		
+		for (i=0; i<usuarios.length; i++){	
+
+			if ((req.body.usernameLogin == usuarios[i].username) && (bcrypt.compareSync(req.body.passwordLogin, usuarios[i].password))){
+
+				res.render('index');
+			}
+			else{
+
+				res.render ('login')
+			}
+		}
+	},
+
     create: (req, res) => {
 		res.render('libro-create-form');
 	},
