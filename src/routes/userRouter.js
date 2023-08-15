@@ -19,7 +19,7 @@ router.get('/register', controller.register );
 router.post('/register', validaciones, controller.registerPOST);
 
 router.get('/login', controller.login);
-router.post('/login', controller.loginPost)
+router.post('/login', controller.loginPOST)
 
 /**CREAR UN PRODUCTO */
 router.get('/create', controller.create);

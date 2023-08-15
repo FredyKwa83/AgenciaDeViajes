@@ -45,10 +45,10 @@ const controller ={
 	
 			fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios,null,' '));
 	
-			res.redirect('/'); // manda el producto al index
+			res.redirect('/'); 
 		}
 		else {
-			res.render ('/register', {errors: errors.array()});
+			res.render ('register', {errors: errors.array()}); //no aparecen lo errores
 		}
 	},
 
@@ -57,17 +57,17 @@ const controller ={
         res.render('login');
     },
 
-	loginPost : (req, res) => {
+	loginPOST : (req, res) => {
 		
 		for (i=0; i<usuarios.length; i++){	
 
 			if ((req.body.usernameLogin == usuarios[i].username) && (bcrypt.compareSync(req.body.passwordLogin, usuarios[i].password))){
 
-				res.render('index');
+				res.redirect('/');
 			}
 			else{
 
-				res.render ('login')
+				res.render ('login');
 			}
 		}
 	},
