@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const indexRouter = require('./src/routes/indexRouter');
-const userRouter = require('./src/routes/userRouter');
+const indexRouter = require('./routes/indexRouter');
+const userRouter = require('./routes/userRouter');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -12,12 +12,15 @@ const methodOverride =  require('method-override'); // Para poder usar los méto
 app.use(methodOverride('_method')); // Para poder pisar el method="POST" en el formulario por PUT y DELETE
 
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.set('view engine', 'ejs');
+app.set('views', 'src/views')
 
-app.use(indexRouter);
-app.use(userRouter);
+
+
+app.use('/', indexRouter);
+app.use('/user', userRouter);
 
 
 /**bootstrap */

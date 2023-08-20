@@ -13,11 +13,11 @@
   "id": 2,
   "nombre": "Constanza",
   "Apellido": "Druetta",
-  "username": "coti123",
+  "username": "coti1234",
   "email": "cotidruetta1@gmail.com",
   "pais": "Argentina",
-  "genero": "Femenino",
-  "password": "$2a$10$oTUjxtRSfJVN9AlAtHWiUO61ogcW.QSsNVLqd9lt.zy5eRB5BSv9i"
+  "genero": "Masculino",
+  "password": "$2a$10$oHxYkd89XC7Yl2UgKBhTJuRFGM9NoFFtT8IBJYdFzh8FagsC5Z/be"
  },
  {
   "id": 3,
@@ -26,7 +26,7 @@
   "username": "coti123",
   "email": "cotidruetta1@gmail.com",
   "pais": "Argentina",
-  "genero": "Femenino",
-  "password": "$2a$10$4z6fYLoeAhiU7z0ZPDrVC.UuK7po6.HwyPexLYuc1oM54SenEIYHe"
+  "genero": "Masculino",
+  "password": "$2a$10$0LLNzqi2HWp1b5VYyYYCqeGPrdyTgihZJ0X1gtEZFi/LNIjjheaLG"
  }
 ]
