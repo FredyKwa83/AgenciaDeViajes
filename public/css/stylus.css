@@ -264,7 +264,7 @@
 }
 .carrito-comprar{
     width: 100%;
-    height: 9vw;
+    height: 3vw;
     margin-top: 2.5vw;
     font-weight: bold;
     border-radius: 6px;
@@ -291,110 +291,6 @@
     width: 100%;
 }
 
-/* @media (min-width: 1200px){
-    .hamburguer-button{
-        scale: 70%;
-    }
-
-    .titulo{
-        scale: 70%;
-        text-align: center;
-    }
-
-    .logo{
-        scale: 70%;
-
-    }
-
-    .carrito{
-        scale: 70%;
-    }
-
-    .buscar{
-        width: 82vw;
-        height: 6vh;
-    }
-
-    .boton{
-        width: 12vw;
-        height: 6vh;
-    }
-    
-    .main-header{
-        height: 20vw;
-    }
-    .imagenLibro{
-        height: auto;
-        width: 45%;
-    }
-    .estrellas-desktop-detalleProducto{
-        display: block;
-        width: 20%;
-        height: auto;
-        position: relative;
-        bottom: 12vw;
-        left: 4vw;
-    }
-    .estrellas-detalleProducto{
-        scale: 50%;
-    }
-
-    .estrella-favorito{
-        height: 6vh;
-        width: 35vw;
-        border-radius: 6px;
-        margin-top:1vw;
-        font-weight: bold;
-    }
-
-    .share-compartir{
-        height: 6vh;
-        width: 35vw;
-        border-radius: 6px;
-        margin-top:1vw;
-        font-weight: bold;
-    }
-
-    .camion-compartir{
-        height: 6vh;
-        width: 35vw;
-        border-radius: 6px;
-        margin-top:1vw;
-        font-weight: bold;
-    }
-
-    .carrito-comprar{
-        height: 6vh;
-        width: 35vw;
-        border-radius: 6px;
-        margin-top: 1vw;
-    }
-
-    .carrito-boton-comprar{
-        width: 5%;
-        position: relative;
-        left: 18px;
-    }
-    .estrellas-detalleProducto{
-       display: none;
-    }
-    .infoLibro{
-       position: relative;
-       bottom: 8.5vw;
-    }
-    .sinopsis-detalleProducto{
-        font-size: 20px;
-        text-align: justify;
-        padding: 5vw 19.5vw 5vw 12.3vw ;
-        position: relative;
-        bottom: 12vw;
-    }
-    .comentarios-detalleProducto{
-       width: 70%;
-       padding-left: 12.7vw;
-    }
-
-} */
 
 /*-----------------register-----------------------*/
 
@@ -672,7 +568,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (min-width: 769px){
 
 /* ------HEADER--NAVBAR-------------------*/
 
@@ -734,6 +630,7 @@
 .main-navbar {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         position: relative;
         bottom: 5vw;
     }
@@ -765,6 +662,15 @@
         z-index: 1;
         bottom: 4.5vw;
         right: 49vw;
+    }
+
+    .imagenLibro{
+        height: 455px;
+        width: 250px;
+        padding: 0;
+        border: 5px solid white;
+        margin-top: 5vw;
+        margin-left: 3vw;
     }
 
 .ingresar {
@@ -862,7 +768,7 @@
     }
 
     .carrito-boton-comprar {
-        width: 16%;
+        width: 6%;
     }
 
     .producto2 {
