@@ -4,8 +4,8 @@
   "description": "El sitio se basa en un e-commerce para la venta de libros, el cual cuenta con un catálogo amplio de opciones y categorías para lectores principalmente niños, Jóvenes y adultos jóvenes.",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",

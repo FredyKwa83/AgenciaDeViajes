@@ -18,21 +18,31 @@
 </head>
 
 <body>
-    <header>  <%- include('./partials/header') %> </header>
+<%- include('./partials/header') %>
 
     <main>
         <body class="Body-login">
 
        
-        <form action="/user/login" method="POST" id="login">
+        <form action="/user/login" method="post" id="login">
             <div class="form-prg">
                 <h4>Nombre de usuario</h4>
-                <input type="text" id="user" name="usernameLogin" placeholder="dagne0701">
+                <input type="text" id="user" name="usernameLogin" placeholder="">
             </div>
+            <% if (locals.errors && errors.usernameLogin) { %>
+                <div>
+                    <p style="color: red;"><%= errors.usernameLogin.msg %></p>
+                </div>
+            <% } %>
             <div class="form-prg">
                 <h4>Contraseña</h4>
-                <input type="password" id="password" name="passwordLogin" placeholder="********">
+                <input type="password" id="password" name="passwordLogin" placeholder="">
             </div>
+            <% if (locals.errors && errors.passwordLogin) { %>
+                <div>
+                    <p style="color: red;"><%= errors.passwordLogin.msg %></p>
+                </div>
+            <% } %>
             <div class="smbt">
                 <button type="reset" class="white-btn">Olvidé mi contraseña</button>
                 <input type="submit" value="Ingresar" class="blue-btn">

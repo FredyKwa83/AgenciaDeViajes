@@ -1,32 +1,52 @@
 [
- {
-  "id": 1,
-  "nombre": "Constanza",
-  "Apellido": "Druetta",
-  "username": "coti123",
-  "email": "cotidruetta1@gmail.com",
-  "pais": "Argentina",
-  "genero": "otro",
-  "password": "$2a$10$XZbh8Cq1pZWD6wvyz94k4ucb3GwIm28ZoY9ayVICX/GO.QmM.MCbS"
- },
- {
-  "id": 2,
-  "nombre": "Constanza",
-  "Apellido": "Druetta",
-  "username": "coti1234",
-  "email": "cotidruetta1@gmail.com",
-  "pais": "Argentina",
-  "genero": "Masculino",
-  "password": "$2a$10$oHxYkd89XC7Yl2UgKBhTJuRFGM9NoFFtT8IBJYdFzh8FagsC5Z/be"
- },
- {
-  "id": 3,
-  "nombre": "Constanza",
-  "Apellido": "Druetta",
-  "username": "coti123",
-  "email": "cotidruetta1@gmail.com",
-  "pais": "Argentina",
-  "genero": "Masculino",
-  "password": "$2a$10$0LLNzqi2HWp1b5VYyYYCqeGPrdyTgihZJ0X1gtEZFi/LNIjjheaLG"
- }
+  {
+    "id": 1,
+    "nombre": "Constanza",
+    "Apellido": "Druetta",
+    "username": "coti123",
+    "email": "cotidruetta1@gmail.com",
+    "pais": "Argentina",
+    "genero": "otro",
+    "password": "$2a$10$XZbh8Cq1pZWD6wvyz94k4ucb3GwIm28ZoY9ayVICX/GO.QmM.MCbS"
+  },
+  {
+    "id": 2,
+    "nombre": "Constanza",
+    "Apellido": "Druetta",
+    "username": "coti1234",
+    "email": "cotidruetta1@gmail.com",
+    "pais": "Argentina",
+    "genero": "Masculino",
+    "password": "$2a$10$oHxYkd89XC7Yl2UgKBhTJuRFGM9NoFFtT8IBJYdFzh8FagsC5Z/be"
+  },
+  {
+    "id": 3,
+    "nombre": "Constanza",
+    "Apellido": "Druetta",
+    "username": "coti123",
+    "email": "cotidruetta1@gmail.com",
+    "pais": "Argentina",
+    "genero": "Masculino",
+    "password": "$2a$10$0LLNzqi2HWp1b5VYyYYCqeGPrdyTgihZJ0X1gtEZFi/LNIjjheaLG"
+  },
+  {
+    "id": 4,
+    "nombre": "juan",
+    "Apellido": "perez",
+    "username": "jperez",
+    "email": "jperez@emial.com",
+    "pais": "Argentina",
+    "genero": "Masculino",
+    "password": "$2a$10$//qPbj9YV48ci9uDrVEfoe7QV9/XTbFqU2pih5vmlRxVMQsjkHckS"
+  },
+  {
+    "id": 5,
+    "nombre": "Nahuel",
+    "Apellido": "Careaga",
+    "username": "Nanu123",
+    "email": "nanu.careaga@gmail.com",
+    "pais": "Argentina",
+    "genero": "Masculino",
+    "password": "$2a$10$3kt2cqXCClL/jSo5.ghUF.Xl1KsNMxx8S01uNYGAv9f0ZiXPy6Oym"
+  }
 ]

@@ -2,28 +2,19 @@ const express = require('express');
 
 const router = express.Router();
 
-const controller = require('../controllers/userController');
+const userController = require('../controllers/userController');
 
-const { check } = require ('express-validator');
+const registerValidations = require('../validations/registerValidations');
 
-/*---------VALIDACIONES---------*/
+router.get('/register', userController.register );
+router.post('/register', registerValidations, userController.registerPOST);
 
-let validaciones = [
-    check('nombre').notEmpty().withMessage('campo vacio').bail(),
-    check('Apellido').notEmpty().withMessage('campo vacio'),
-    check('username').isLength({min: 5}).withMessage('se requieren al menos 5 caracteres'),
-    check('email').isEmail()
-];
-
-router.get('/register', controller.register );
-router.post('/register', validaciones, controller.registerPOST);
-
-router.get('/login', controller.login);
-router.post('/login', controller.loginPOST)
+router.get('/login', userController.login);
+router.post('/login', userController.loginPOST)
 
 /**CREAR UN PRODUCTO */
-router.get('/create', controller.create);
-router.post('/create', controller.store);
+router.get('/create', userController.create);
+router.post('/create', userController.store);
 
 
 module.exports = router;

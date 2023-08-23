@@ -1,19 +1,16 @@
-const { log } = require('console');
 const fs = require('fs');
 const path = require('path');
+const {all,findByField,generate,write} = require('../models/usersModel');
 
-const { validationResult } = require ('express-validator');
+const {validationResult} = require('express-validator');
 
-const bcrypt = require ('bcryptjs');
+const bcrypt = require('bcryptjs');
 
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
-let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
-
-const usuariosFilePath = path.join(__dirname, "../database/usuarios.json");
-let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
+let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'))
 
 
-const controller ={
+const userController ={
 
     register: (req, res) => {
         //res.sendFile((__dirname + '/views/register.html'));
@@ -21,34 +18,17 @@ const controller ={
     },
 
 	registerPOST: (req, res) => {
-		let errors = validationResult(req);
+        const resultValidation = validationResult(req)
 
-		if (errors.isEmpty){
-					
-			let idNuevoUsuario = (usuarios[usuarios.length-1].id)+1; 
+        if (resultValidation.errors.length > 0) { 
+            return res.render('register' , {errors: resultValidation.mapped() , old : req.body})
+        } else {
+			let user = generate(req.body);
+			let allUsers = all();
+			allUsers.push(user);
+			write(allUsers);
 
-			let passwordEncriptada = bcrypt.hashSync (req.body.password, 10)
-	
-			let objNuevoUsuario = {
-				id: idNuevoUsuario,
-				nombre: req.body.nombre,
-				Apellido: req.body.Apellido,
-				username: req.body.username,
-				email: req.body.email,
-				fechaNacimiento: req.body.fechaNacimiento,
-				pais: req.body.pais,
-				genero: req.body.genero,
-				password: passwordEncriptada
-			}
-	
-			usuarios.push(objNuevoUsuario);
-	
-			fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios,null,' '));
-	
-			res.redirect('/'); 
-		}
-		else {
-			res.render ('register', {errors: errors.array()}); //no aparecen lo errores
+			return res.render('login');
 		}
 	},
 
@@ -59,17 +39,37 @@ const controller ={
 
 	loginPOST : (req, res) => {
 		
-		for (i=0; i<usuarios.length; i++){	
+		let userToLogin = findByField('username', req.body.usernameLogin)
 
-			if ((req.body.usernameLogin == usuarios[i].username) && (bcrypt.compareSync(req.body.passwordLogin, usuarios[i].password))){
+        if (userToLogin) {
+            let correctPassword = bcrypt.compareSync(req.body.passwordLogin, userToLogin.password);
+            if (correctPassword) {
+                // delete userToLogin.password
+                // req.session.userLogged = userToLogin
 
-				res.redirect('/');
-			}
-			else{
+                // if (req.body.remember) {
+                //     res.cookie('userEmail' , req.body.email, {maxAge : (((1000 * 60) * 60)*24)}) // cookie de 24 hs
+                // }
 
-				res.render ('login');
-			}
-		}
+                return res.send('Bienvenido');
+             } else {
+                return res.render('login' , {
+                    errors: {
+                        passwordLogin: {
+                            msg: 'Contraseña incorrecta'
+                        }
+                    },
+                    old : req.body
+                })
+             }
+        } else {
+            return res.render('login' , {
+                errors: {
+                    usernameLogin: {
+                        msg: 'El usuario con el que intenta ingresar no existe'
+                    }
+                }})
+        }
 	},
 
     create: (req, res) => {
@@ -99,4 +99,4 @@ const controller ={
 
 }
 
-module.exports = controller;
+module.exports = userController;
