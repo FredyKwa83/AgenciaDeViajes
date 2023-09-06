@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const db = require ('../database/models')
+
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
 let products = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 
@@ -11,6 +13,10 @@ const controller ={
         //res.render('index');
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 		res.render('index', {libros});
+
+        db.libro.findAll().then(function(resultados){
+            console.log(resultados);
+        })
     },
 
     detalledeProducto : (req, res) => {
