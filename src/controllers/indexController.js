@@ -14,7 +14,7 @@ const controller ={
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 		res.render('index', {libros});
 
-        db.libro.findAll().then(function(resultados){
+        db.puntaje.findAll().then(function(resultados){
             console.log(resultados);
         })
     },

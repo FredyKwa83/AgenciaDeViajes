@@ -13,6 +13,32 @@ function librosData (sequelize, Datatypes){
 
     const libro = sequelize.define(alias, cols, config);
 
+    libro.associate = function(model){
+        libro.hasMany(model.usuario, {
+            as: 'usuario',
+            foreignKey: 'id_libro'
+        })
+    }
+
+    libro.associate = function (model){
+        libro.belongsToMany(model.categoria, {
+
+            as: 'categoria',
+            through: 'libro_categoria', // tabla intermedia
+            foreignKey: 'id_libro', // es el FK del modelo en el que estas (en la tabla intermedia de la bd)
+            otherKey: 'id_categoria' ,           // es el FK del otro modelo (en la tabla intermedia de la bd)
+            timestamps: false
+
+        })
+    }
+
+    libro.associate = function (model){
+        libro.hasMany(model.puntaje, {
+            as:'puntaje',
+            foreignKey:'id_libro'
+        })
+    }
+
     return libro;
 
 }
