@@ -466,6 +466,14 @@
     right: 49vw ;
 }
 
+.login-2{
+    width: 3.5%;
+    position: absolute;
+    z-index: 1;
+    bottom: 4.5vw;
+    right: 49vw ;
+}
+
 .ingresar{
     width: 3.5%;
     position: absolute;
@@ -662,6 +670,17 @@
         z-index: 1;
         bottom: 4.5vw;
         right: 49vw;
+    }
+
+    .login-2{
+        width: 3.5%;
+        position: absolute;
+        z-index: 1;
+        bottom: 4.5vw;
+        right: 1vw ;
+        border: 5px;
+        border-radius: 6px;
+        border-color: #ebebeb;
     }
 
     .imagenLibro{

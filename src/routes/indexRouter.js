@@ -10,6 +10,8 @@ router.get('/producto/:id', controller.detalledeProducto );
 
 router.get('/cart/:id', controller.cart);
 
+router.get("/usuario/:id", controller.usuario)
+
 router.get ('/edit/:id', controller.getEdit);
 router.put ('/edit/:id', controller.putEdit);
 

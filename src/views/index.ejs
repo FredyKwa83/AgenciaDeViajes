@@ -16,30 +16,8 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-div1">
-            <a href="#" class="hamburguer-button"> <i class="fa-solid fa-bars"></i> </a>
-            <a href="/"><h2 class="titulo"> Arcolbooks </h2></a>
-            <img class="logo" src="/img/logolibros2.png" alt=""></a>
-            <img class="carrito" src="/img/carritoblanco.png" alt="">
-        </div>
-
-        <div class="main-div2">
-            <input class="buscar" type="search" placeholder="Escribe el nombre del libro">
-            <button class="boton"> Buscar </button>
-        </div>
-
-<nav class="main-navbar">
-        <li> <a href="#"> Ofertas </a> </li>
-        <li> <a href="#"> Ayuda </a> </li>
-        <li> <a href="user/register"> Crea tu cuenta </a>  </li>
-        <img class="login" src="/img/loginsvg.svg" alt="">
-        <li> <a href="user/login"> login </a> </li>
-        <img class="ingresar" src="/img/ingresar.svg" alt="">
-        <li> <a href="#"> Mis compras </a> </li>
-        <img class="carrito-comprador" src="/img/carritocomprador.svg" alt="">
-</nav>
-        
+    <header>
+        <%- include('./partials/header') %> 
     </header>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
@@ -141,47 +119,7 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
-        <footer>
-            <div class="box__footer">     
-                <img class= "baner" src="../img/banner-envio-JULIO.jpg" alt="">
-            </div>
-            
-            <div class="container__footer">
-                <div class="box__footer">
-                    <h2>Acerca de</h2>
-                    <a href="#">Arcolbooks</a>
-                    <a href="#">Investor relations</a>
-                    <a href="#">Tendencias</a>
-                    <a href="#">Sustentabilidad</a>
-                </div>
-                <div class="box__footer">
-                    <h2>Ayuda</h2>
-                    <a href="#">Devoluciones</a>
-                    <a href="#">Gastos y forma de envio</a>
-                    <a href="#">Preguntas frecuentes</a>
-                    <a href="#">Estado de tu pedido</a>
-                </div>
-                <div class="box__footer">
-                    <h2>Redes Sociales</h2>
-                    <a href="#"><i class="fab fa-facebook-square"></i>facebook</a>
-                    <a href="#"><i class="fab fa-twitter-square"></i>twitter</a>
-                    <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-                    <a href="#"><i class="fab fa-instagram square"></i>instagram</a>            
-                </div>
-                <div class="box__footer">
-                    <h2>Medios de Pago</h2>
-                  
-                    <img class= "medios_pagos" src="../img/Captura-de-Pantalla-2021-02-18-a-las-11.32.36-a.-m..png" alt="">
-                </div>
-            </div> 
-            <div class="box__copyright">
-                <hr>
-                <p>Todos los derechos reservados © 2023
-                <b>Arcolbooks</b></p>
-    
-            </div>
-    
-        </footer>
+        <%- include('./partials/footer') %>
 
 </body>
 

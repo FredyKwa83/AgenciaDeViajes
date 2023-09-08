@@ -52,6 +52,7 @@ const userController ={
                 // }
 
                 return res.send('Bienvenido');
+                res.cookie("login", "Hola usuario")
              } else {
                 return res.render('login' , {
                     errors: {
