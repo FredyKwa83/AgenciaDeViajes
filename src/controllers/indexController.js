@@ -38,12 +38,6 @@ const controller ={
         }
     },
 
-    usuario : (req,res) => {
-        let id = req.params.id;
-        libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
-        libros = libros.find(libro => libro.id == id);
-    },
-
     getEdit : (req, res) => {
         let id = req.params.id;
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
