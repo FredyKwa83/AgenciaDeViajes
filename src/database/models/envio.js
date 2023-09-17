@@ -20,9 +20,7 @@ function enviosData (sequelize, Datatypes){
             as: 'pago',
             foreignKey: 'id_pago'
         })
-    }
-
-    envio.associate = function (model){
+    
         envio.belongsTo(model.usuario, {
             as: 'usuario',
             foreignKey: 'id_usuario'

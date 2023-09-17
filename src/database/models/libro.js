@@ -18,11 +18,8 @@ function librosData (sequelize, Datatypes){
             as: 'usuario',
             foreignKey: 'id_libro'
         })
-    }
-
-    libro.associate = function (model){
+    
         libro.belongsToMany(model.categoria, {
-
             as: 'categoria',
             through: 'libro_categoria', // tabla intermedia
             foreignKey: 'id_libro', // es el FK del modelo en el que estas (en la tabla intermedia de la bd)
@@ -30,9 +27,7 @@ function librosData (sequelize, Datatypes){
             timestamps: false
 
         })
-    }
-
-    libro.associate = function (model){
+    
         libro.hasMany(model.puntaje, {
             as:'puntaje',
             foreignKey:'id_libro'
