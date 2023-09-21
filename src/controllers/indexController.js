@@ -13,10 +13,6 @@ const controller ={
         //res.render('index');
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 		res.render('index', {libros});
-
-        db.puntaje.findAll().then(function(resultados){
-            console.log(resultados);
-        })
     },
 
     detalledeProducto : (req, res) => {
