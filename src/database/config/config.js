@@ -1,10 +1,11 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "libros-web",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "nanu",
+    "password": "Nanudigitalhouse",
+    "database": "nanu_librosweb",
+    "host": "mysql-nanu.alwaysdata.net",
+    "dialect": "mysql",
+    "port":3306
   },
   "test": {
     "username": "root",

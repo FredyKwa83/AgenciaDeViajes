@@ -7,8 +7,9 @@ const {validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
 
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
-let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'))
-
+let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+const usuariosFilePath = path.join(__dirname, '../database/usuarios.json');
+let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
 const userController ={
 
@@ -74,9 +75,12 @@ const userController ={
 	},
 
     perfil : (req,res) => {
-  
-        res.render('perfil', {libros: libros});
-        
+        let id = req.params.id
+        usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
+        usuarios = usuarios.find(usuario => usuario.id == id);
+        if (usuarios){
+        res.render('perfil', {usuarios: usuarios});
+        }
     },
 
     create: (req, res) => {
