@@ -6,9 +6,11 @@ function usuariosData (sequelize, Datatypes){
         id: {type: Datatypes.INTEGER, primaryKey: true, autoIncrement: true},
         nombre: {type: Datatypes.STRING(50)},
         email: {type: Datatypes.STRING(50)},
+        password:{type: Datatypes.STRING(50)},
+        username:{type: Datatypes.STRING(50)},
         fechacreacion: {type: Datatypes.DATE},
         fechaeliminacion: {type: Datatypes.DATE},
-        rol: {type: Datatypes.ENUM('C', 'A')} ,
+        rol: {type: Datatypes.ENUM('Administrador', 'Cliente', 'Vendedor')} ,
         id_libro: {type: Datatypes.INTEGER} 
     }
 

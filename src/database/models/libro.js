@@ -5,8 +5,10 @@ function librosData (sequelize, Datatypes){
     let cols = {
         id: {type: Datatypes.INTEGER, primaryKey: true, autoIncrement: true},
         nombre: {type: Datatypes.STRING(50)},
-        descripcion: {type: Datatypes.STRING(100)},
-        precio: {type: Datatypes.STRING(50)}
+        descripcion: {type: Datatypes.STRING(1500)},
+        precio: {type: Datatypes.STRING(50)},
+        descuento: {type: Datatypes.STRING(50)},
+        imagen: {type: Datatypes.STRING(50)}
     }
 
     let config = {camelCase: false, timestamps: false};
