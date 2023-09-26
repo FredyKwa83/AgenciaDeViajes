@@ -24,7 +24,7 @@
             <legend>Formulario de creación de libros</legend>
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre del producto:</label>
-				<input type="text" id="name" name="titulo" class="form-control" value="<%= libros.titulo %>" placeholder="Nombre del producto" >
+				<input type="text" id="name" name="titulo" class="form-control" value="<%= libros.nombre %>" placeholder="Nombre del producto" >
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Precio del producto:</label>
@@ -36,37 +36,17 @@
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Genero:</label>
-						<select name="genero" id="category" value="<%= libros.genero %>" class="form-control">
-							<option value="">Elegí</option>
+						<select name="genero" id="category" class="select-editForm" class="form-control">
 
-                            <% if (libros.genero == "Educacion") { %>
+                            <% for (let i=0; i < generos.length; i++) {%>
+                                <% if (generos[i].id == libros.id_categoria) { %>
 
-							<option value="Educacion" selected> Educación</option>
-							<option value="Motivacion">Motivación</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Ficcion">Ficción</option>
+                                    <option value="<%= generos[i].id %>" selected> <%= generos[i].nombre %></option>
 
-                            <% } else if (libros.genero == "Motivacion"){ %>
-
-                            <option value="Educacion"> Educación</option>
-                            <option value="Motivacion" selected>Motivación</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Ficcion">Ficción</option>
-                            
-                            <% } else if (libros.genero == "Infantil"){ %>
-
-                            <option value="Educacion"> Educación</option>
-                            <option value="Motivacion">Motivación</option>
-                            <option value="Infantil" selected>Infantil</option>
-                            <option value="Ficcion">Ficción</option>
-
-                            <% } else if (libros.genero == "Ficcion"){ %>
-
-                            <option value="Educacion"> Educación</option>
-                            <option value="Motivacion" >Motivación</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Ficcion" selected>Ficción</option>
-                            <% } %>
+                                <% } else { %>
+                                    <option value="<%= generos[i].id %>"> <%= generos[i].nombre %></option>
+                                <% } %>
+                            <% } %>    
 						</select>
             </div>
             <div class="mb-3">

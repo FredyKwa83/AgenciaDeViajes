@@ -18,24 +18,6 @@
   "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/ea/a5/eaa593b5d5b4a4576330a40fa29372da.jpg"
  },
  {
-  "id": 3,
-  "titulo": "Todos somos genios - Andrew Maltés, José Arturo Torres",
-  "precio": 95,
-  "descuento": 20,
-  "genero": "Infantil",
-  "descripcion": "Todos los años desde 1901 un grupo de personas notables de la sociedad sueca elige a un hombre o a una mujer cuyos descubrimientos, investigaciones o innovaciones dentro de sus áreas de conocimiento generaron importantes aportes para el avance de la humanidad.",
-  "imagen": "https://images.cdn2.buscalibre.com/fit-in/360x360/1e/ea/1eea1c246bd0aab1035668aaec72bbf0.jpg"
- },
- {
-  "id": 4,
-  "titulo": "Transforma las heridas de tu infancia - Anamar Orihuela 2",
-  "precio": "45",
-  "descuento": "15",
-  "genero": "Educacion",
-  "descripcion": " -------------------------------------\"",
-  "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/6d/b8/6db8c3ac7be12d774bc018f53e99d323.jpg"
- },
- {
   "id": 5,
   "titulo": "Introducció al Psicoanálisis - Sigmund Freud",
   "precio": "200",

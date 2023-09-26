@@ -2,6 +2,8 @@ const {resolve} = require("path")
 const fs = require("fs")
 const bcryptjs = require('bcryptjs');
 
+const db = require ('../database/models')
+
 let model = {
     all : function () {
 

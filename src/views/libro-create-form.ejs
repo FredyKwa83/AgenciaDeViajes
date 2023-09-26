@@ -37,11 +37,10 @@
             <div class="mb-3">
                 <label for="category" class="form-label">Genero:</label>
 						<select name="genero" id="category" class="form-control">
-							<option value="">Elegí</option>
-							<option value="Educacion">Educación</option>
-							<option value="Motivacion">Motivación</option>
-                            <option value="Infantil">Infantil</option>
-                            <option value="Ficcion">Ficción</option>
+                            <% for (let i=0; i < generos.length; i++) {%>
+							<option value="<%= generos[i].id %>"><%= generos[i].nombre%></option>
+
+                            <%}%>
 						</select>
             </div>
             <div class="mb-3">

@@ -35,12 +35,20 @@ const controller ={
     },
 
     getEdit : (req, res) => {
-        let id = req.params.id;
+        /*let id = req.params.id;
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
         libros = libros.find(libro => libro.id == id);
         if (libros){
             res.render('libro-edit-form', {libros});
-        }
+        }*/
+
+        let findLibro = db.libro.findByPk(req.params.id);
+        let findCategoria = db.categoria.findAll();
+
+        Promise.all([findLibro, findCategoria])
+            .then(function ([libros, generos]){
+                res.render ('libro-edit-form', {libros: libros, generos: generos});
+            })
         
     },
 

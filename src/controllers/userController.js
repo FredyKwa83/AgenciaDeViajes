@@ -4,6 +4,8 @@ const {all,findByField,generate,write} = require('../models/usersModel');
 
 const {validationResult} = require('express-validator');
 
+const db = require ('../database/models')
+
 const bcrypt = require('bcryptjs');
 
 const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
@@ -14,8 +16,7 @@ let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 const userController ={
 
     register: (req, res) => {
-        //res.sendFile((__dirname + '/views/register.html'));
-        res.render('register');
+            res.render('register');
     },
 
 	registerPOST: (req, res) => {
@@ -24,12 +25,23 @@ const userController ={
         if (resultValidation.errors.length > 0) { 
             return res.render('register' , {errors: resultValidation.mapped() , old : req.body})
         } else {
-			let user = generate(req.body);
+			/*let user = generate(req.body);
 			let allUsers = all();
 			allUsers.push(user);
 			write(allUsers);
 
-			return res.render('login');
+			return res.render('login');*/
+
+            db.usuario.create({
+                nombre: req.body.nombre,
+                email: req.body.email,
+                password: bcrypt.hashSync(req.body.password, 10),
+                username: req.body.username,
+                rol: req.body.rol,
+            })
+
+            res.render('login'); 
+
 		}
 	},
 
@@ -75,19 +87,28 @@ const userController ={
 	},
 
     perfil : (req,res) => {
-        let id = req.params.id
+        /*let id = req.params.id
         usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
         usuarios = usuarios.find(usuario => usuario.id == id);
         if (usuarios){
         res.render('perfil', {usuarios: usuarios});
-        }
+        }*/
+
+    db.usuario.findByPk(req.params.id)
+        .then(function (usuario){
+            return res.render ('perfil', {usuario: usuario});
+
+        });
     },
 
     create: (req, res) => {
-		res.render('libro-create-form');
+        db.categoria.findAll()
+            .then(function(generos){
+                return res.render('libro-create-form', {generos: generos});
+            })
 	},
     store: (req, res) =>{
-        let datosFormulario = req.body;
+       /* let datosFormulario = req.body;
 		let idNuevoLibro = (libros[libros.length-1].id)+1; // obtener un id (acordate por que +1)
 		// console.log(idNuevoLibro); // verificar antes de continuar
 
@@ -105,8 +126,23 @@ const userController ={
 
 		fs.writeFileSync(librosFilePath, JSON.stringify(libros,null,' '));
 
-		res.redirect('/'); // manda el producto al index
+		res.redirect('/'); // manda el producto al index*/
+
+
+        db.libro.create({
+            nombre: req.body.titulo,
+            descripcion: req.body.descripcion,
+            precio: req.body.precio,
+            descuento: req.body.descuento
+            
+        });
+
+        res.redirect('/'); // manda el producto al index
+
+        
     }
+
+
 
 }
 
