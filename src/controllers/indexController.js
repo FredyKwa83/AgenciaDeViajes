@@ -11,27 +11,37 @@ const controller ={
     index : (req, res) => {
         //res.sendFile((__dirname + '/views/index.html'));
         //res.render('index');
-        libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
-		res.render('index', {libros});
+        /*libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+		res.render('index', {libros});*/
+        db.libro.findAll()
+            .then(function(libros){
+                return res.render('index', {libros: libros});
+            })
     },
 
     detalledeProducto : (req, res) => {
-        let id = req.params.id;
+        /* let id = req.params.id;
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
         libros = libros.find(libro => libro.id == id);
         if (libros){
         res.render('detalleProducto', {libros: libros});
-        }
+        }*/
+        db.libro.findByPk(req.params.id)
+            .then(function(libros){
+                return res.render('detalleProducto', {libros: libros});
+            })
     },
 
     cart : (req, res) => {
-        //res.sendFile((__dirname + '/views/cart.html'));
-        let id = req.params.id;
-        libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
-        libros = libros.find(libro => libro.id == id);
-        if (libros){
-        res.render('cart', {libros: libros});
-        }
+        //res.sendFile((__dirname + '/views/index.html'));
+        //res.render('index');
+        /*libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
+        res.render('index', {libros});*/
+        db.libro.findByPk(req.params.id)
+            .then(function(libros){
+                return res.render('cart', {libros: libros});
+            })
+
     },
 
     getEdit : (req, res) => {
@@ -53,7 +63,7 @@ const controller ={
     },
 
     putEdit : (req, res) => {
-        let id = req.params.id;
+        /*let id = req.params.id;
         libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
 
         l = libros.find(libro => libro.id == id);
@@ -68,9 +78,16 @@ const controller ={
            
         } 
 
-        fs.writeFileSync(librosFilePath, JSON.stringify(libros, null, ' '));
+        fs.writeFileSync(librosFilePath, JSON.stringify(libros, null, ' '));*/
 
-        res.redirect ('/')
+        db.libro.update({
+            nombre: req.body.titulo,
+            descripcion: req.body.descripcion,
+            precio: req.body.precio,
+            descuento: req.body.descuento
+        })
+
+        res.redirect ('/');
         
     },
 

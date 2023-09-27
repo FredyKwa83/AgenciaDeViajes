@@ -27,7 +27,7 @@
         <form action="/user/login" method="post" id="login">
             <div class="form-prg">
                 <h5>Nombre de usuario</h5>
-                <input type="text" id="user" name="usernameLogin" placeholder="">
+                <input type="text" id="user" name="username" placeholder="">
             </div>
             <% if (locals.errors && errors.usernameLogin) { %>
                 <div>
@@ -36,7 +36,7 @@
             <% } %>
             <div class="form-prg">
                 <h5>Contraseña</h5>
-                <input type="password" id="password" name="passwordLogin" placeholder="">
+                <input type="password" id="password" name="password" placeholder="">
             </div>
             <% if (locals.errors && errors.passwordLogin) { %>
                 <div>

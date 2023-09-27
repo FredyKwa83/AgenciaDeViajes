@@ -52,11 +52,25 @@ const userController ={
 
 	loginPOST : (req, res) => {
 		
-		let userToLogin = findByField('username', req.body.usernameLogin)
+		//let userToLogin = findByField('username', req.body.usernameLogin)
 
-        if (userToLogin) {
-            let correctPassword = bcrypt.compareSync(req.body.passwordLogin, userToLogin.password);
-            if (correctPassword) {
+        db.usuario.findOne({where: { 
+            username: req.body.username
+        }})
+            .then(userFound => { if (userFound){
+                let correctPassword = bcrypt.compareSync(req.body.password, userFound.password);
+                if (correctPassword){
+                    req.session.userLogged = userFound;
+                }
+                res.redirect('/perfil');
+            } else {}
+
+
+
+
+               /* if (req.body.username == usuarios.username){
+                        let correctPassword = bcrypt.compareSync(req.body.password, usuarios.password);
+                    if (correctPassword) {
                 // delete userToLogin.password
                 // req.session.userLogged = userToLogin
 
@@ -64,26 +78,31 @@ const userController ={
                 //     res.cookie('userEmail' , req.body.email, {maxAge : (((1000 * 60) * 60)*24)}) // cookie de 24 hs
                 // }
 
-                return res.send('Bienvenido');
-                res.cookie("login", "Hola usuario")
-             } else {
-                return res.render('login' , {
+                    return res.send('Bienvenido');
+                    res.cookie("login", "Hola usuario")
+                } else {
+                    return res.render('login' , {
                     errors: {
-                        passwordLogin: {
+                        password: {
                             msg: 'Contraseña incorrecta'
                         }
                     },
                     old : req.body
                 })
              }
-        } else {
-            return res.render('login' , {
-                errors: {
-                    usernameLogin: {
+                } else {
+                 return res.render('login' , {
+                    errors: {
+                    username: {
                         msg: 'El usuario con el que intenta ingresar no existe'
                     }
                 }})
-        }
+                    }*/
+                
+        })
+       
+        
+            
 	},
 
     perfil : (req,res) => {
