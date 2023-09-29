@@ -7,7 +7,7 @@ const userController = require('../controllers/userController');
 const registerValidations = require('../validations/registerValidations');
 
 
-router.get('/perfil/:id', userController.perfil);
+router.get('/perfil', userController.perfil);
 
 router.get('/register', userController.register );
 router.post('/register', registerValidations, userController.registerPOST);

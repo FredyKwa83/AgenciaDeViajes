@@ -5,6 +5,8 @@ const {resolve} = require('path');
 
 const methodOverride =  require('method-override'); // Para poder usar los métodos PUT y DELETE
 
+const session = require('express-session');
+
 app.listen(3004, function () {
     console.log("Servidor corriendo");
 });
@@ -25,6 +27,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method')); // Para poder pisar el method="POST" en el formulario por PUT y DELETE
 
 app.use(express.json());
+
+app.use(session({
+    secret: 'usuario en sesión',
+    resave: false,
+    saveUninitialized: false
+}));
 
 const indexRouter = require('./routes/indexRouter');
 const userRouter = require('./routes/userRouter')

@@ -50,20 +50,26 @@ const userController ={
         res.render('login');
     },
 
-	loginPOST : (req, res) => {
+	loginPOST : async(req, res) => {
 		
 		//let userToLogin = findByField('username', req.body.usernameLogin)
 
-        db.usuario.findOne({where: { 
-            username: req.body.username
-        }})
-            .then(userFound => { if (userFound){
-                let correctPassword = bcrypt.compareSync(req.body.password, userFound.password);
-                if (correctPassword){
-                    req.session.userLogged = userFound;
-                }
-                res.redirect('/perfil');
-            } else {}
+        try {
+            const userToLogin = await db.usuario.findOne({where: {username: req.body.username}});
+            console.log("Nombre de usuario: ", userToLogin)
+
+            const correctPassword = bcrypt.compareSync(req.body.password, userToLogin.password);
+            console.log("Contraseña correcta: ", correctPassword)
+            if (correctPassword){
+                req.session.userLogged = userToLogin;
+                return res.redirect("perfil");
+            } else {
+                return res.send("Credenciales incorrectas")
+            }
+            
+            /*} else {
+                res.render("/login", {errors: {log: {msg: "Credencial no válida"}}});
+            }*/
 
 
 
@@ -99,13 +105,15 @@ const userController ={
                 }})
                     }*/
                 
-        })
-       
+        /*)*/}
+        catch (error) { 
+            console.log(error.message); 
+        }
         
             
 	},
 
-    perfil : (req,res) => {
+    perfil : async(req,res) => {
         /*let id = req.params.id
         usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
         usuarios = usuarios.find(usuario => usuario.id == id);
@@ -113,11 +121,13 @@ const userController ={
         res.render('perfil', {usuarios: usuarios});
         }*/
 
-    db.usuario.findByPk(req.params.id)
-        .then(function (usuario){
-            return res.render ('perfil', {usuario: usuario});
-
-        });
+        
+        try {
+            return res.render('perfil', {usuario: req.session.userLogged});
+        }
+        catch (error) { 
+            console.log(error.message); 
+        }
     },
 
     create: (req, res) => {

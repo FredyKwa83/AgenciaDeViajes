@@ -18,10 +18,17 @@
         <%- include('./partials/header') %> 
     </header>
 
-    <h4>BIENVENID@!! <%= usuario.username %></h4>
-
-
-
+    <h4 class="bienvenida">BIENVENID@ <%= usuario.username %>!!</h4>
+    <div class="credenciales">
+        <p>Tus Credenciales son: </p>
+        <br>
+        <p>Nombre: <%= usuario.nombre %></p>
+        <p>Dirección de correo: <%= usuario.email %></p>
+        <p>Identificación de tu cuenta por número: <%= usuario.id %></p>
+        <p>Asignación de cuenta: <%= usuario.rol %></p>
+    
+    </div>
+    <br>
     <%- include('./partials/footer') %>
 
 

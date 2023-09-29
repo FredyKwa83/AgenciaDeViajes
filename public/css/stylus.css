@@ -1412,3 +1412,26 @@ a:visited {
 /*--------------------------------------------*/
 
 
+/*-----------PERFIL------------------*/
+
+.bienvenida{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.credenciales{
+    background-color: #1D1D1D;
+    color: #ebebeb;
+    border-radius: 6px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+
+/*--------------------------------------------*/
