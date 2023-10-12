@@ -85,9 +85,14 @@ const controller ={
             descripcion: req.body.descripcion,
             precio: req.body.precio,
             descuento: req.body.descuento
-        })
+        },
+        
+        {where: {
+            id: req.params.id
+        }})
 
-        res.redirect ('/');
+            res.redirect('/' + req.params.id); // Redirige a la página de detalles del libro actualizado
+
         
     },
 
