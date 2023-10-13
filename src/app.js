@@ -7,7 +7,7 @@ const methodOverride =  require('method-override'); // Para poder usar los méto
 
 const session = require('express-session');
 
-app.listen(3002, function () {
+app.listen(3004, function () {
     console.log("Servidor corriendo");
 });
 

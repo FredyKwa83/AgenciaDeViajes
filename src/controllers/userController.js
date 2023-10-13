@@ -166,7 +166,7 @@ const userController ={
             
         });
 
-        res.redirect('/user'); // manda el producto al index
+        res.redirect('/'); // manda el producto al index
 
         
     }

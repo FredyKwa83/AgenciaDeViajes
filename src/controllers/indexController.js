@@ -91,7 +91,7 @@ const controller ={
             id: req.params.id
         }})
 
-            res.redirect('/' + req.params.id); // Redirige a la página de detalles del libro actualizado
+            res.redirect('/' ); // Redirige a la página de detalles del libro actualizado
 
         
     },
