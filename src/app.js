@@ -36,9 +36,11 @@ app.use(session({
 
 const indexRouter = require('./routes/indexRouter');
 const userRouter = require('./routes/userRouter')
+const apiRouter = require('./routes/librosApiRouter')
 
 app.use('/', indexRouter);
 app.use('/user/', userRouter);
+app.use('/api/', apiRouter);
 
 
 
