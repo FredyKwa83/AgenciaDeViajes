@@ -22,12 +22,12 @@
     <div>
         <h1 class="registerTitulo">Registro de Usuario</h1>
     </div>
-
+    
     <form action="/user/register" method="post" class="register">
 
 
         <label for="nombre"></label>
-        <input type="text" placeholder="Nombre" name="nombre" class="control"><br>
+        <input type="text" placeholder="Nombre" name="nombre" class="control" id="n1"><br>
         <% if (locals.errors && errors.nombre) { %>
             <div>
                 <p style="color: red;"><%= errors.nombre.msg %></p>
@@ -135,7 +135,7 @@
         </div>
 
     </form>
-
+    
     <!-- <script>
         function validateForm() {
             let isValid = true;
@@ -191,7 +191,7 @@
 </div>
 
 <%- include('./partials/footer') %>
-
+<script src="/scripts/logicaregister.js" defer></script>
 </body>
 
 </html>
