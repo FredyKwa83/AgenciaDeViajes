@@ -36,7 +36,7 @@
         
 
         <label for="Apellido"></label>
-        <input type="text" placeholder="Apellido" name="Apellido" class="control"><br>
+        <input type="text" placeholder="Apellido" name="Apellido" class="control" id="a1"><br>
         <% if (locals.errors && errors.Apellido) { %>
             <div>
                 <p style="color: red;"><%= errors.Apellido.msg %></p>
@@ -45,25 +45,25 @@
 
         <label for="username"></label>
         <!-- <div class="error" id="username-error"></div> -->
-        <input type="text" placeholder="Nombre de usuari@" name="username" class="control"><br>
+        <input type="text" placeholder="Nombre de usuari@" name="username" class="control" id="u1"><br>
         <% if (locals.errors && errors.username) { %>
             <div>
                 <p style="color: red;"><%= errors.username.msg %></p>
             </div>
         <% } %>
         <label for="email"></label>
-        <input type="email" placeholder="email" name="email" class="control"><br>
+        <input type="email" placeholder="email" name="email" class="control" id="e1"><br>
         <% if (locals.errors && errors.email) { %>
             <div>
                 <p style="color: red;"><%= errors.email.msg %></p>
             </div>
         <% } %>
         <label for="fecha-nacimiento">fecha de nacimiento</label>
-        <input type="date" placeholder="Fecha de Nacimiento" name="fecha-nacimiento" class="control"><br>
+        <input type="date" placeholder="Fecha de Nacimiento" name="fecha-nacimiento" class="control" id="f1"><br>
 
 
         <label for="pais">País:</label>
-        <select name="pais" class="control">
+        <select name="pais" class="control" id="p1">
             <option value="">Selecciona un país</option>
 
             <option value="Afghanistan">Afganistán</option>
@@ -116,17 +116,17 @@
             <option value="Dominican Republic">República Dominicana</option>
         </select><br>
         <label for="genero">Rol de usuario</label>
-        <select name="rol" class="control">
+        <select name="rol" class="control" id="r1">
             <option value="Administrador">Administrador</option>
             <option value="Vendedor">Vendedor</option>
             <option value="Cliente">Cliente </option>
         </select><br>
 
         <label for="password"></label>
-        <input type="password" placeholder="Contraseña" name="password" class="control"><br>
+        <input type="password" placeholder="Contraseña" name="password" class="control" id="c1"><br>
         <div class="error" id="password-error"></div>
         <label for="confirm-password"></label>
-        <input type="password" placeholder="Confirmar Contraseña" name="confirm-password" class="control"><br>
+        <input type="password" placeholder="Confirmar Contraseña" name="confirm-password" class="control" id="c2"><br>
         <div class="g-recaptcha" data-sitekey="6LcHN4QmAAAAAEIbXoXZuJ6SofhKZuZvqRpEMT0L"></div>
 
         <div class="button-container">
