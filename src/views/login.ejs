@@ -27,22 +27,24 @@
         <form action="/user/login" method="post" id="login">
             <div class="form-prg">
                 <h5>Nombre de usuario</h5>
-                <input type="text" id="user" name="username" placeholder="">
+                <input type="text" id="user" name="username" placeholder="Nombre de usuario" value="<%= locals.old ? old.username : '' %>">>
             </div>
-            <% if (locals.errors && errors.usernameLogin) { %>
+            <% if (locals.errors && errors.username) { %>
                 <div>
-                    <p style="color: red;"><%= errors.usernameLogin.msg %></p>
+                    <p class="errorLogin"><%= errors.username.msg %></p>
                 </div>
             <% } %>
+            <p class="errorLogin" id="error1"></p>
             <div class="form-prg">
                 <h5>Contraseña</h5>
-                <input type="password" id="password" name="password" placeholder="">
+                <input type="password" id="password" name="password" placeholder="Contraseña">
             </div>
-            <% if (locals.errors && errors.passwordLogin) { %>
+            <% if (locals.errors && errors.password) { %>
                 <div>
-                    <p style="color: red;"><%= errors.passwordLogin.msg %></p>
+                    <p class="errorLogin"><%= errors.password.msg %></p>
                 </div>
             <% } %>
+            <p class="errorLogin" id="error2"></p>
             <div class="smbt">
                 <button type="reset" class="white-btn">Olvidé mi contraseña</button>
                 <input type="submit" value="Ingresar" class="blue-btn">
@@ -51,6 +53,8 @@
     
     </main>
         <%- include('./partials/footer') %>
+
+        <script src="/scripts/validacionesLogin.js" defer></script>
 </body>
 
 </html>
