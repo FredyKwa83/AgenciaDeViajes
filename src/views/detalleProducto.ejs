@@ -22,8 +22,13 @@
               <li>Titulo: <%=libros.nombre%></li>
               <li>$ <%=libros.precio%></li>
               <li class="disponible">#Disponible</li>
-              <li><button class="container text-center estrella-favorito"> Agregar a favoritos  <i class="fa-solid fa-star" style="color: #d56a07;"></i></button>
-              <li><button class="container text-center share-compartir"> Compartir  <i class="fa-solid fa-share-from-square" style="color: #d56a07;"></i></button>
+
+              <div class="botones-detalle-padre">
+              <div class="botones-detalle1">
+              <li><button class="container text-center boton-detalle estrella-favorito"> Agregar a favoritos  <i class="fa-solid fa-star" style="color: #d56a07;"></i></button>
+              <li><button class="container text-center boton-detalle share-compartir"> Compartir  <i class="fa-solid fa-share-from-square" style="color: #d56a07;"></i></button>
+              <li><button class="container text-center boton-detalle"> Calcular envio  <i class="fa-sharp fa-solid fa-truck-fast camion-boton-compartir" style="color: #d56a07;"></i></button>
+              </div>
               
               <li><button class="container text-center camion-compartir"> Calcular envio  <i class="fa-sharp fa-solid fa-truck-fast camion-boton-compartir" style="color: #d56a07;"></i></button>
               <li><a href="/cart/<%=libros.id%>"><button class="container text-center camion-compartir"> Comprar  <img class="carrito-boton-comprar" src="/img/carro2.png" alt=""></button></a></li>
@@ -34,7 +39,15 @@
               <li><a href="/edit/<%=libros.id%>"><button class="container text-center camion-compartir"> Editar producto</button></a></li>
               <form action="/delete/<%=libros.id%>?_method=DELETE" method="POST" style="display: inline-flex;" class="boton-delete">
                 <button type="submit" class="container text-center camion-compartir">Eliminar</button>
+              <div class="botones-detalle2">
+              <li><a href="/cart/<%=libros.id%>"><button class="container text-center boton-detalle"> Comprar  <img class="carrito-boton-comprar" src="/img/carro2.png" alt=""></button></a></li>
+              <li><a href="/edit/<%=libros.id%>"><button class="container text-center boton-detalle"> Editar producto</button></a></li>
+              <form action="/delete/<%=libros.id%>?_method=DELETE" method="POST" >
+                <button type="submit" class="container text-center boton-detalle">Eliminar</button>
               </form>
+              </div>
+              </div>
+
             </ul> 
           </div>
         </div>
