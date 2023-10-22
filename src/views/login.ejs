@@ -27,7 +27,7 @@
         <form action="/user/login" method="post" id="login">
             <div class="form-prg">
                 <h5>Nombre de usuario</h5>
-                <input type="text" id="user" name="username" placeholder="Nombre de usuario" value="<%= locals.old ? old.username : '' %>">>
+                <input type="text" id="user" name="username" placeholder="Nombre de usuario" value="<%= locals.old ? old.username : '' %>">
             </div>
             <% if (locals.errors && errors.username) { %>
                 <div>
