@@ -648,11 +648,11 @@
 /* ------HEADER--NAVBAR-------------------*/
 
 .main-header {
-        background-color: #1D1D1D;
-        max-width: 100%;
-        width: 100vw;
-        height: 20vw;
-    }
+    background-color: #1D1D1D;
+    max-width: 100%;
+    width: 100vw;
+    height: 20vw;
+}
 
 .hamburguer-button {
         display: none;
