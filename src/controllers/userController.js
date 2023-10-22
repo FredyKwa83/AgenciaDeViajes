@@ -162,14 +162,15 @@ const userController ={
             nombre: req.body.titulo,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            descuento: req.body.descuento
+            descuento: req.body.descuento,
+            genero: req.body.genero
             
         });
 
         res.redirect('/'); // manda el producto al index
+    },
 
-        
-    }
+    
 
 
 

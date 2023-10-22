@@ -22,8 +22,8 @@
     </header>
     
     <main class="main-cart">
-        <form action="/user/create" method="POST">
-            <legend>Formulario de creación de libros</legend>
+        <form action="/user/create/" method="POST">
+            <legend class="tamaño-titulo-formulario">Formulario de creación de libros</legend>
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre del producto:</label>
 				<input type="text" id="name" name="titulo" class="form-control" placeholder="Nombre del producto">
@@ -49,7 +49,7 @@
                 <label for="description" class="form-label">Descipción:</label>
 				<textarea name="descripcion" id="description" class="form-control"></textarea>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 boton-guardar " >
                 <button type="submit" class="btn btn-primary">Guardar Libro</button>
             </div>
             

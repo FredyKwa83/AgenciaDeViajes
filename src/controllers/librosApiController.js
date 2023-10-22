@@ -98,6 +98,7 @@ module.exports = {
             nombre: { [Op.like]: '%' + keyword + '%' }
           }
         })
+        
         .then(libros => {
           return res.status(200).json(libros);
         });
