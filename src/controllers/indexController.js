@@ -37,11 +37,7 @@ const controller ={
         //res.render('index');
         /*libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
         res.render('index', {libros});*/
-        db.libro.findByPk(req.params.id)
-            .then(function(libros){
-                return res.render('cart', {libros: libros});
-            })
-
+            res.render('cart', {libros: libros});
     },
 
     getEdit : (req, res) => {

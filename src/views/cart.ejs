@@ -72,17 +72,30 @@
             <article class="cuerpo-container  conteiner-pr-sub">
                 <div class="cuerpo-cantidad ">
                     <h4 class="precio-cantidad">Precio: $<%=libros.precio%></h4>
-                    <h5 class="precio-cantidad">Cantidad: <input type="number" id="tentacles" name="tentacles" min="0" max="10"></h5>
+                    
+                    <h5 class="precio-cantidad">Subtotal: $ <%=libros.precio - (libros.descuento * libros.precio / 100) %></h5>
                 </div>
             </article>
             <article class="cuerpo-container cuerpo-compra  conteiner-pr-sub">
-                    <div class="compra">
-                        <div class="subtotal">
-                            <h5 class="precio-cantidad">Subtotal: $ <%=libros.precio - (libros.descuento * libros.precio / 100) %></h5>
-                        </div>
-                        <div class="finaliza">
-                            <button class="button-finalizar" type="submit">Finalizar Compra</button>
-                        </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                      <tbody id="detalleCompra">
+                        <!-- Aquí se mostrará el detalle de la compra -->
+                      </tbody>
+                    </table>
+                    <div class="row mx-4">
+                      <div class="col">
+                        <h3 class="text-black">Total: $<span id="totalCompra">0.00</span></h3>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div>
+    
+                    <button type="submit" class="btn-buy-button-finalizar">Comprar Ahora</button>
+                    <button  type="button" class="btn-cart-button-finalizar" onclick="addToCart(1, '<%=libros.id%>', '<%=libros.nombre%>', '', '<%=libros.precio%>'), showAddedToCartMessage();">Agregar al Carrito</button>
+                    <div id="addedToCartMessage" style="display: none; text-align: center;margin-bottom: 10px;">
+                        <span style="padding: 5px;" class="text-success">Agregado al carrito</s>
                     </div>
             </article>
             </div>
@@ -92,6 +105,7 @@
     <!--<footer>-->
         <%- include('./partials/footer') %>
     <!--</footer>-->
-    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="/scripts/validacionesCarrito.js" defer></script>
 </body>
 </html>
