@@ -92,10 +92,18 @@ const userController ={
             nombre: req.body.titulo,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
+            descuento: req.body.descuento,
+            genero: req.body.genero,
             descuento: req.body.descuento
         });
         res.redirect('/'); // manda el producto al index
+    },
+
+    
+
+
+
     }
-}
+
 
 module.exports = userController;

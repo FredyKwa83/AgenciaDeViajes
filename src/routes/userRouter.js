@@ -17,8 +17,8 @@ router.post('/login', userController.loginPOST)
 
 
 /**CREAR UN PRODUCTO */
-router.get('/create', userController.create);
-router.post('/create', userController.store);
+router.get('/create/', userController.create);
+router.post('/create/', userController.store);
 
 
 module.exports = router;

@@ -59,6 +59,17 @@
     width: 14%;
 }
 
+.mb-3 {
+    width: 200px;
+    position: relative;
+    left: 55px;
+}
+
+/* .tamaño-titulo-formulario{
+    width: 20px;
+} */
+
+
 .main-div2 {
     padding-bottom: 1%;
     display: flex;
@@ -410,7 +421,7 @@
     background-color: #1D1D1D;
     max-width: 100%;
     width: 100vw;
-    height: 27.5vw;
+    height: 23vw;
 }
 
 .hamburguer-button{
@@ -418,8 +429,9 @@
 }
 .titulo {
     position: relative;
-    left: 10.5vw;
-    font-size: 6.3vw;
+    left: 12.5vw;
+    bottom:5px;
+    font-size: 5.5vw;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     padding-top: 3vw;
@@ -428,9 +440,9 @@
 
 .logo {
     position:relative;
-    right: 58vw;
+    right: 55vw;
     width: 12%;
-    bottom: 1vw;
+    bottom: 3vw;
     padding-top: 3vw;  
 }
 
@@ -440,13 +452,14 @@
 
 .buscar {
     position: relative;
-    left: 46vw;
-    bottom: 9vw;
+    left: 45vw;
+    bottom: 10vw;
     border-radius: 4px;
     width: 37vw;
     height: 5vw;
     border-style: none;
     text-align: center; 
+    font-size: 13px;
 }
 
 .boton {
@@ -454,20 +467,21 @@
     width: 8.5vw;
     height: 5vw;
     position: relative;
-    left:48vw;
-    bottom: 9vw;
+    left:45vw;
+    bottom: 10vw;
     border-style: none;
+    font-size: 13px;
 }
 
 .main-navbar {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom:7vw;
+    bottom:9vw;
 }
 
 .main-navbar ul {
-    list-style: none;
+    
     margin: 0;
     padding: 0;
     display: flex;
@@ -475,6 +489,7 @@
 
 .main-navbar li {
     margin: 1.5vw;
+    list-style-type: none;
 }
 .main-navbar a {
     text-decoration: none;
@@ -483,19 +498,20 @@
     margin-top: 1.5vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
+    
 }
 
 .login{
-    width: 3.5%;
+    width: 2.5%;
     position: absolute;
     z-index: 1;
     bottom: 4.5vw;
-    right: 49vw ;
+    right: 51vw ;
 }
 
 .login-2{
-    width: 3.5%;
+    width: 2.5%;
     position: absolute;
     z-index: 1;
     bottom: 4.5vw;
@@ -503,19 +519,19 @@
 }
 
 .ingresar{
-    width: 3.5%;
+    width: 2.5%;
     position: absolute;
     z-index: 1;
     bottom: 4.5vw;
-    right: 28vw;
+    right: 30vw;
 }
 
 .carrito-comprador{
-    width: 3.5%;
+    width: 2.5%;
     position: absolute;
     z-index: 1;
     bottom: 4.5vw;
-    right: 9vw;
+    right: 10vw;
 }
 
 /* ------MAIN--DIV--TODOS-LOS-LIBROS-481PX--768PX---*/
@@ -632,11 +648,11 @@
 /* ------HEADER--NAVBAR-------------------*/
 
 .main-header {
-        background-color: #1D1D1D;
-        max-width: 100%;
-        width: 100vw;
-        height: 27.5vw;
-    }
+    background-color: #1D1D1D;
+    max-width: 100%;
+    width: 100vw;
+    height: 20vw;
+}
 
 .hamburguer-button {
         display: none;
@@ -644,8 +660,8 @@
 
 .titulo {
         position: relative;
-        left: 11vw;
-        font-size: 6vw;
+        left: 15vw;
+        font-size: 4vw;
         color: rgb(255, 255, 255);
         text-transform: capitalize;
         padding-top: 2.8vw;
@@ -653,8 +669,8 @@
 
 .logo {
         position: relative;
-        right: 58vw;
-        width: 12%;
+        right:50vw;
+        width: 8.5%;
         bottom: 1vw;
         padding-top: 3vw;
     }
@@ -669,7 +685,7 @@
         bottom: 7vw;
         border-radius: 4px;
         width: 37vw;
-        height: 4.5vw;
+        height: 4.3vw;
         border-style: none;
         text-align: center;
         font-size:2vw;
@@ -678,7 +694,7 @@
 .boton {
         border-radius: 4px;
         width: 8.5vw;
-        height: 4.5vw;
+        height: 4.3vw;
         position: relative;
         left: 46vw;
         bottom: 7vw;
@@ -688,7 +704,7 @@
 
 .main-navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         flex-direction: row;
         position: relative;
         bottom: 5vw;
@@ -703,6 +719,7 @@
 
 .main-navbar li {
         margin: 1.5vw;
+        list-style-type: none;
     }
 
 .main-navbar a {
@@ -710,25 +727,25 @@
         color: #ffffff;
         display: inline-block;
         margin-top: 1.5vw;
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-        font-size: 3vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        font-size: 2.2vw;
     }
 
 .login {
-        width: 3.5%;
+        width: 2.5%;
         position: absolute;
         z-index: 1;
         bottom: 4.5vw;
-        right: 49vw;
+        right: 51vw;
     }
 
     .login-2{
-        width: 3.5%;
+        width: 2.5%;
         position: absolute;
         z-index: 1;
         bottom: 4.5vw;
-        right: 1vw ;
+        right: 5vw ;
         border: 5px;
         border-radius: 6px;
         border-color: #ebebeb;
@@ -744,19 +761,19 @@
     }
 
 .ingresar {
-        width: 3.5%;
+        width: 2.5%;
         position: absolute;
         z-index: 1;
         bottom: 4.5vw;
-        right: 28vw;
+        right: 33vw;
     }
 
 .carrito-comprador {
-        width: 3.5%;
+        width: 2.5%;
         position: absolute;
         z-index: 1;
         bottom: 4.5vw;
-        right: 9vw;
+        right: 17vw;
     }
 
 
@@ -895,88 +912,121 @@
 @media (min-width: 1200px){
 
     .main-header {
-       
-       
+        background-color: #1D1D1D;
+        max-width: 100%;
         width: 100vw;
-        height: 14vw;
+        height: 13vw;
+    }
+    
+    .hamburguer-button{
+        display:none;
     }
     .titulo {
-        font-size: 2vw;
-        margin: 1px 1px 5px;
-        padding: 10px 5px 1px 180px;
-      
-    }
-    .logo {
-        width: 7%;
-        margin: 1px 1px 5px;
-        padding: 10px 5px 1px;
-        margin-left: 38vw;
-      
-    
+        position: relative;
+        left: 18vw;
+        bottom:2vw;
+        font-size:3vw;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        padding-top: 3vw;
         
     }
+    
+    .logo {
+        position:relative;
+        right: 45vw;
+        width: 7%;
+        bottom: 2.5vw;
+        padding-top: 3vw;  
+    }
+    
+    .carrito {
+        width: 0%;
+    }
+    
     .buscar {
+        position: relative;
+        left: 50vw;
+        bottom: 7vw;
         border-radius: 4px;
-        width: 30vw;
-        height: 1.6vw;
+        width: 35vw;
+        height: 3vw;
         border-style: none;
-        text-align: center;
-        font-size: 1.1rem;
-        margin-top: 38px;
-      
-   
-    } 
-      
+        text-align: center; 
+        font-size: 17px;
+    }
+    
     .boton {
         border-radius: 4px;
-        width: 3vw;
-        height: 1.6vw;
-        text-align: center;
-        font-size: 0.7rem;
-        margin-top: 38px;
+        width: 6vw;
+        height: 3vw;
+        position: relative;
+        left:50vw;
+        bottom: 7vw;
+        border-style: none;
+        font-size: 17px;
+    }
+    
+    .main-navbar {
+        display: flex;
+        justify-content:center;
+        position: relative;
+        bottom:7vw;
+    }
+    
+    .main-navbar ul {
         
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .main-navbar li {
+        margin: 1.5vw;
+        list-style-type: none;
     }
     .main-navbar a {
-      
-       
-        margin-top: 0px;
-        margin-left: 1vw;
-        margin-right: 1vw;
-        font-size: 1.2vw;
+        text-decoration: none;
+        color: #ffffff;
+        display: inline-block;
+        margin-top: 1.5vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        font-size: 1.6vw;
         
     }
-    .main-div1 {
-        display: flex;
-        justify-content: space-between;
-      
-        max-width: 95%;
-        align-items: center;
-  
-       
-    }
-    .login {
+    
+    .login{
         width: 2%;
         position: absolute;
         z-index: 1;
-        bottom: 2.8vw;
-        right: 49vw;
+        bottom: 3.5vw;
+        right: 51vw ;
     }
+    
+    .login-2{
+        width: 2%;
+        position: absolute;
+        z-index: 1;
+        bottom: 4.5vw;
+        right: 49vw ;
+    }
+    
+    .ingresar{
+        width: 2%;
+        position: absolute;
+        z-index: 1;
+        bottom: 3.5vw;
+        right: 38vw;
+    }
+    
     .carrito-comprador{
-        width: 2%;
+        width: 1.8%;
         position: absolute;
         z-index: 1;
-        bottom: 2.8vw;
-        right: 5vw;
+        bottom: 3.5vw;
+        right: 25vw;
     }
-
-        .ingresar{
-            width: 2%;
-            position: absolute;
-            z-index: 1;
-            bottom: 2.8vw;
-            right: 27vw;
-
-        }
 
     .carousel-indicators{
         
@@ -1372,16 +1422,34 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1D1D1D;
+    background-color: #ffffff;
     font-family: "roboto";
     color: white;
 }
 .main-cart{
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid white;
-    padding: 15px;
+    border: 2px solid rgb(26, 26, 26);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: rgb(26, 26, 26) ;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.form-control{
+    width: 350px;
+    height: 30px;
+    
+}
+
+.boton-guardar  {
+    position:relative;
+    left: 90px;
+    top:20px;
 
 }
 
@@ -1617,6 +1685,11 @@ a:visited {
         width: 420px; 
     
     }
+.form-control{
+    width: 500px;
+    height: 35px;
+    
+}
 
 }
 
@@ -1634,7 +1707,21 @@ a:visited {
 
     .main-cart{
         width: 600px; 
+        
+        
     
+    .form-control{
+        width: 300px;
+        height: 45px;
+        position: relative;
+        right: 40px;
+    }
+
+    .form-label{
+        position: relative;
+        right: 30px;
+    }
+        
     }
     .cuerpo-cart{
         display: flex;
@@ -1708,16 +1795,5 @@ a:visited {
 }
 
 
-
 /*--------------------------------------------*/
-
-/*---------ERRORES--------------------------------*/
-.erroresEdit{
-    color: red;
-    font-weight: bold;
-}
-.errorLogin{
-    color: red;
-    font-weight: bold;
-    text-align: center;
-}
+    

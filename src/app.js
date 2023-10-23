@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require("cors")
 
 const {resolve} = require('path');
 
@@ -7,10 +8,12 @@ const methodOverride =  require('method-override'); // Para poder usar los méto
 
 const session = require('express-session');
 
-app.listen(3004, function () {
+app.listen(3005, function () {
     console.log("Servidor corriendo");
 });
 
+
+app.use(cors());
 app.set('views', resolve(__dirname, 'views'));
 app.set("view engine", "ejs");
 
@@ -37,10 +40,12 @@ app.use(session({
 const indexRouter = require('./routes/indexRouter');
 const userRouter = require('./routes/userRouter')
 const apiRouter = require('./routes/librosApiRouter')
+const userApiRouter = require('./routes/userApiRouter')
 
 app.use('/', indexRouter);
 app.use('/user/', userRouter);
 app.use('/api/', apiRouter);
+app.use('/user/api/', userApiRouter);
 
 
 
