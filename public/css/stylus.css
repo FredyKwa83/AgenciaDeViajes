@@ -2371,6 +2371,10 @@ a:visited {
     font-weight: bold;
     margin-left: 20vw;
 }
+.erroresEdit{
+    color: red;
+    font-weight: bold;
+}
 
 .inputLogin{
     height: 35px !important;

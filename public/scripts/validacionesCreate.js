@@ -39,7 +39,9 @@ window.addEventListener("load", () =>{
         }else if (typeof(nombreLibro.value) !== "string"){
             error5.innerHTML = '<p> el tipo de dato ingresado no corresponde con los datos solicitados </p>';
         } 
-        formulario.submit()
+        if(!error1 & !error2 & !error3 & !error4 & !error5){
+            formulario.submit()
+        }
     })
 
 })
