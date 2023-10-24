@@ -1,17 +1,21 @@
 const fs = require('fs');
 const path = require('path');
-const {all,findByField,generate,write} = require('../models/usersModel');
 
 const {validationResult} = require('express-validator');
 
 const db = require ('../database/models')
 
-const bcrypt = require('bcryptjs');
+const cloudinary = require('cloudinary');
+const streamifier = require('streamifier');
 
-const librosFilePath = path.join(__dirname, '../database/librosDataBase.json');
-let libros = JSON.parse(fs.readFileSync(librosFilePath, 'utf-8'));
-const usuariosFilePath = path.join(__dirname, '../database/usuarios.json');
-let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
+const bcrypt = require('bcryptjs');
+const { name } = require('ejs');
+
+cloudinary.config ({
+    cloud_name: 'djdehtaic',
+    api_key: '562794885344328',
+    api_secret: 'P6oex-8Xlbv4-IgAr8C1SS03SO0',
+})
 
 const userController ={
 
@@ -98,10 +102,6 @@ const userController ={
         });
         res.redirect('/'); // manda el producto al index
     },
-
-    
-
-
 
     }
 
