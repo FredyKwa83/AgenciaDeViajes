@@ -13,8 +13,8 @@
 
 .main-header {
     background-color: #1D1D1D;
-    max-width: 100%;
-    width: 100vw;
+    /* max-width: 100%; */
+    width: 100%;
     height: 32vw;
 }
 
@@ -243,8 +243,8 @@
 /*-----------------DETALLE PRODUCTO-----------------------*/
 
 .body-detalleProducto{
-    background-color: #1D1D1D ;
-    color: white;
+    background-color: #ffffff ;
+    color: rgb(0, 0, 0);
     font-family: "roboto";
 }
 .boton-detalle{
@@ -275,8 +275,66 @@
     text-align: start;
     line-height: 2.3em;
     list-style-type: none;
+    border-radius: 10px;
     padding: 0;
+    margin-top: 10vw;
+}
+
+.container-btn-detail {
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+    margin-top: 5px;
+    background-color: #1D1D1D;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.boton-delete{
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+}
+
+.nombre-libro{
+    color: rgb(6, 6, 6);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagenLibro{
+    height: 220px;
+    width: 170px;
+    padding: 0;
+    border: 5px solid rgb(255, 217, 0);
     margin-top: 5vw;
+    margin-left: 5vw;
+    position: relative;
+    left: 25px;
+}
+
+.sinapsis{
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+.parrafo-contenedor{
+    width: 80vw;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.parrafo-descripcion{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 10px;
 }
 .estrellas-detalleProducto{
     position: relative;
@@ -285,19 +343,12 @@
     right: 4.5vw;
 }
 .estrellas-detalleProducto-padre{
-    height: 8vw;
+     width: 60%;
 }
 .disponible{
     color: #4fea8f;
 }
-.imagenLibro{
-    height: 200px;
-    width: 140px;
-    padding: 0;
-    border: 5px solid white;
-    margin-top: 5vw;
-    margin-left: 5vw;
-}
+
 .carrito-comprar{
     width: 100%;
     height: 3vw;
@@ -314,19 +365,21 @@
     text-align: justify;
 }
 .comentarios-detalleProducto{
-    padding: 2vw 8vw;
+    
+    padding-bottom: 30px;
+    width:78vw;
+    position: relative;
+    left: 48px;
 }
 .textarea-detalleProducto{
     background-color: transparent;
     color: white;
-    border:solid;
-    border-radius: 6px;
+    border:1px solid black;
+    border-radius: 5px;
     width: 100%;
 }
 
-.boton-delete{
-    width: 100%;
-}
+
 /*------------------------------------------------*/
 
 /*-----------------register-----------------------*/
@@ -498,7 +551,7 @@
     margin-top: 1.5vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-    font-size: 2.5vw;
+    font-size: 3vw;
     
 }
 
@@ -618,28 +671,152 @@
     height: 30%;
 }
 /*---------------detalle producto---------*/
-.sinopsis-detalleProducto{
-    margin-top: 10vw;
-    padding: 5vw 8vw;
-    text-align: justify;
-    font-size: 20px;
+.body-detalleProducto{
+    background-color: #ffffff ;
+    color: rgb(0, 0, 0);
+    font-family: "roboto";
 }
-.estrellas-detalleProducto{
+.boton-detalle{
+    border-radius: 6px;
+    width: 40vw;
+    margin-top: 2vw;
+}
+.botones-detalle-padre{
+    margin-top: 5vw;
+    display: flex;
     position: relative;
-    bottom: 12vw;
-    width: 80%;
-    right: 4.5vw;
+    top: 10vw;
+    right: 37vw;
+}
+.botones-detalle1{
+    display: flex;
+    flex-direction: column;
+}
+.botones-detalle2{
+    /*position: relative;
+    right: 45vw;
+    bottom: 20vw;*/
+    margin-left: 7vw;
+    display: flex;
+    flex-direction: column;
 }
 .infoLibro{
     text-align: start;
     line-height: 2.3em;
     list-style-type: none;
+    border-radius: 10px;
     padding: 0;
-    margin-top: 5vw;
-    font-size: 20px;
+    margin-top: 10vw;
+}
+
+.container-btn-detail {
+    border-radius: 8px;
+    width: 180px;
+    height: 45px;
+    position: relative;
+    left: 28px;
+    bottom: 10px;
+    margin-top: 5px;
+    background-color: #1D1D1D;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container-detail{
+    justify-content: center;
+}
+
+.boton-delete{
+    border-radius: 8px;
+    width: 180px;
+    height: 45px;
+}
+
+.nombre-libro{
+    color: rgb(6, 6, 6);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
 }
 
 
+.imagenLibro{
+    height: 350px;
+    width: 340px;
+    padding: 0;
+    border: 5px solid rgb(255, 217, 0);
+    position: relative;
+    left: 30px;
+}
+
+.col-7{
+    position: relative;
+    left: 12vw;
+    width: 100px;
+}
+
+.sinapsis{
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+}
+.parrafo-contenedor{
+    width: 80vw;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.parrafo-descripcion{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 10px;
+}
+.estrellas-detalleProducto{
+    position: relative;
+    bottom: 12vw;
+    width: 85%;
+    right: 4.5vw;
+}
+.estrellas-detalleProducto-padre{
+     width: 60%;
+}
+.disponible{
+    color: #4fea8f;
+}
+
+.carrito-comprar{
+    width: 100%;
+    height: 3vw;
+    margin-top: 2.5vw;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.estrellas-desktop-detalleProducto{
+    display: none;
+}
+.sinopsis-detalleProducto{
+    margin-top: 5vw;
+    padding: 5vw 8vw;
+    text-align: justify;
+}
+.comentarios-detalleProducto{
+    
+    padding-bottom: 30px;
+    width:78vw;
+    position: relative;
+    left: 48px;
+}
+.textarea-detalleProducto{
+    background-color: transparent;
+    color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
 
 }
 
@@ -871,16 +1048,32 @@
         height: 32.8%;
     }
     /*-----------------DETALLE PRODUCTO--------------*/
+    .body-detalleProducto{
+        background-color: #ffffff ;
+        color: rgb(0, 0, 0);
+        font-family: "roboto";
+    }
+    .boton-detalle{
+        border-radius: 6px;
+        width: 40vw;
+        margin-top: 2vw;
+    }
     .botones-detalle-padre{
         margin-top: 5vw;
         display: flex;
         position: relative;
+        top: 10vw;
+        right: 37vw;
     }
     .botones-detalle1{
         display: flex;
         flex-direction: column;
     }
     .botones-detalle2{
+        /*position: relative;
+        right: 45vw;
+        bottom: 20vw;*/
+        margin-left: 7vw;
         display: flex;
         flex-direction: column;
     }
@@ -888,27 +1081,133 @@
         text-align: start;
         line-height: 2.3em;
         list-style-type: none;
+        border-radius: 10px;
         padding: 0;
-        margin-top: 5vw;
+        margin-top: 10vw;
     }
-    .imagenLibro{
-        height: 25vw;
-        width: 17vw;
-        padding: 0;
-        border: 5px solid white;
-        margin-top: 5vw;
-        margin-left: 5vw;
-    }
-    .estrellas-desktop-detalleProducto{
-        display: contents;
+    
+    .container-btn-detail {
+        border-radius: 8px;
+        width: 190px;
+        height: 50px;
         position: relative;
-        top: 25vw;
+        left: 28px;
+        bottom: 10px;
+        margin-top: 12px;
+        background-color: #1D1D1D;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
     }
-    .estrellas-detalleProducto{
-        display: none;
+    
+    .container-detail{
+        justify-content: center;
+       
+    }
+    
+    .boton-delete{
+        border-radius: 8px;
+        width: 190px;
+        height: 50px;
+    }
+    
+    .nombre-libro{
+        color: rgb(6, 6, 6);
+        text-align: center;
+        font-weight: bold;
+        margin-top: 35px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+        font-size: 4vw;
+    }
+    
+    
+    .imagenLibro{
+        height: 400px;
+        width: 300px;
+        padding: 0;
+        border: 5px solid rgb(255, 217, 0);
+        position: relative;
+        left: 150px;
+    }
+    
+    .col-7{
+        position: relative;
+        left: 12vw;
+        width: 300px;
+    }
+    
+    .sinapsis{
+        font-weight: bold;
+        position: relative;
+        left: 14px;
+        font-size: 3.5vw;
+    }
+    .parrafo-contenedor{
+        width: 80vw;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    .parrafo-descripcion{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        left: 15px;
+        font-size: 2vw;
+    }
+    .sinopsis-detalleProducto{
+        margin-top: 5vw;
+        padding: 5vw 8vw;
+        text-align: justify;
+      
+    }
+    .comentarios-detalleProducto{
+        
+        padding-bottom: 30px;
+        width:78vw;
+        position: relative;
+        left:10vw;
+        margin-bottom: 10vw; 
     }
 
+    .carrito-boton-comprar{
+            width: 15%;
+    }
+
+    .estrellas-detalleProducto{
+        position: relative;
+        bottom: 12vw;
+        width: 85%;
+        right: 4.5vw;
+    }
+    .estrellas-detalleProducto-padre{
+         width: 60%;
+    }
+    .disponible{
+        color: #4fea8f;
+    }
+    
+    .carrito-comprar{
+        width: 100%;
+        height: 3vw;
+        margin-top: 2.5vw;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .estrellas-desktop-detalleProducto{
+        display: none;
+    }
+    
+    .textarea-detalleProducto{
+        background-color: transparent;
+        color: white;
+        border:1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
 }
+    
 @media (min-width: 1200px){
 
     .main-header {
@@ -1130,8 +1429,174 @@
         padding-bottom: 0px;
         padding-right: 10px;
     }
-    }
+  
+
+/* -----------detalle de producto 1200px--------- */
+
+.body-detalleProducto{
+    background-color: #ffffff ;
+    color: rgb(0, 0, 0);
+    font-family: "roboto";
+}
+.boton-detalle{
+    border-radius: 6px;
+    width: 40vw;
+    margin-top: 2vw;
+}
+.botones-detalle-padre{
+    margin-top: 5vw;
+    display: flex;
+    position: relative;
+    top: 10vw;
+    right: 37vw;
+}
+.botones-detalle1{
+    display: flex;
+    flex-direction: column;
+}
+.botones-detalle2{
+    /*position: relative;
+    right: 45vw;
+    bottom: 20vw;*/
+    margin-left: 7vw;
+    display: flex;
+    flex-direction: column;
+}
+.infoLibro{
+    text-align: start;
+    line-height: 2.3em;
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 10vw;
+}
+
+.container-btn-detail {
+    border-radius: 8px;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    margin-top: 12px;
+    background-color: #1D1D1D;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* .container-detail{
+    justify-content: center;
+   
+} */
+
+.boton-delete{
+    border-radius: 8px;
+    width: 190px;
+    height: 50px;
+}
+
+.nombre-libro{
+    color: rgb(6, 6, 6);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 35px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    font-size: 3vw;
+}
+
+
+.imagenLibro{
+    height: 350px;
+    width: 250px;
+    padding: 0;
+    border: 5px solid rgb(255, 217, 0);
+    position: relative;
+    left: 370px;
+}
+
+.col-7{
+    position: relative;
+    left: 12vw;
+    width: 200px;
+}
+
+.sinapsis{
+    font-weight: bold;
+    position: relative;
+    left: 10vw;
+    bottom: 5vw;
+    font-size: 2.8vw;
+}
+.parrafo-contenedor{
+    width: 80vw;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.parrafo-descripcion{
+    
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 10vw;
+    bottom: 5vw;
+    font-size: 2vw;
+    width: 65vw;
+}
+.sinopsis-detalleProducto{
+    margin-top: 5vw;
+}
+.comentarios-detalleProducto{
+    
+    padding-bottom: 30px;
+    width:76vw;
+    position: relative;
+    left:18vw;
+    margin-bottom: 10vw; 
+    width: 65vw;
+}
+
+.carrito-boton-comprar{
+        width: 15%;
+}
+
+.estrellas-detalleProducto{
+    position: relative;
+    bottom: 12vw;
+    width: 85%;
+    right: 4.5vw;
+}
+.estrellas-detalleProducto-padre{
+     width: 60%;
+}
+.disponible{
+    color: #4fea8f;
+}
+
+.carrito-comprar{
+    width: 100%;
+    height: 3vw;
+    margin-top: 2.5vw;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.estrellas-desktop-detalleProducto{
+    display: none;
+}
+
+.textarea-detalleProducto{
+    background-color: transparent;
+    color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+}
+
 /* -----------FOOTER--------- */
+
 
 footer {
     width: 100%;

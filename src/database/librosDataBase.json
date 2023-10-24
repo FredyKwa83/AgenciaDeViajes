@@ -1,14 +1,5 @@
 [
  {
-  "id": 1,
-  "titulo": "Habla menos, actua más - Brian Tracy",
-  "precio": "70",
-  "descuento": "10",
-  "genero": "Motivacion",
-  "descripcion": "“Habla menos, actúa más” muestra los pasos que debes seguir para evitar la procrastinación y empezar a actuar. Este cambio de actitud te será útil para darte el impulso que necesitas en cualquier cosa que hagas. Por esa razón Brian Tracy detalla 7 pasos para conquistar tus metas.",
-  "imagen": "https://images.cdn1.buscalibre.com/fit-in/360x360/46/f3/46f34f8b0f72e8b3ab0a7ecdaccce9ce.jpg"
- },
- {
   "id": 5,
   "titulo": "Introducció al Psicoanálisis - Sigmund Freud",
   "precio": "200",
