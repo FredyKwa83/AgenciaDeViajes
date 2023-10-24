@@ -16,6 +16,7 @@ window.addEventListener("load", () =>{
       if(password.value == ""){
           error2.innerText ='campo vacio';
       }
+      formulario.submit()
   })
 
 })
