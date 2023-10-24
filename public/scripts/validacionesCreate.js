@@ -2,7 +2,6 @@ window.addEventListener("load", () =>{
 
     let formulario = document.querySelector('form');
     formulario.addEventListener('submit', function(evento){
-        evento.preventDefault();
 
         let nombreLibro = document.getElementById('name');
           
@@ -14,30 +13,37 @@ window.addEventListener("load", () =>{
 
         if(nombreLibro.value === ""){
             error1.innerText = 'campo vacio';
+            evento.preventDefault();
         }else if (typeof(nombreLibro.value) !== "string"){
             error1.innerHTML = '<p> el tipo de dato ingresado no corresponde con los datos solicitados </p>';
+            evento.preventDefault();
         }
 
         let precioLibro = document.getElementById('price');
         if(precioLibro.value == ""){
             error2.innerText ='campo vacio';
+            evento.preventDefault();
         }
 
         let descuentoLibro = document.getElementById('discount');
         if(descuentoLibro.value == ""){
-            error3.innerText ='campo vacio';            
+            error3.innerText ='campo vacio';        
+            evento.preventDefault();    
         }
 
         let generoLibro = document.getElementById('category');
         if(generoLibro.value == ""){
             error4.innerText ='seleccione un género';
+            evento.preventDefault();
         }
 
         let descripcionLibro = document.getElementById('description');
         if(descripcionLibro.value == ""){
             error5.innerText ='campo vacio';
+            evento.preventDefault();
         }else if (typeof(nombreLibro.value) !== "string"){
             error5.innerHTML = '<p> el tipo de dato ingresado no corresponde con los datos solicitados </p>';
+            evento.preventDefault();
         } 
         if(!error1 & !error2 & !error3 & !error4 & !error5){
             formulario.submit()

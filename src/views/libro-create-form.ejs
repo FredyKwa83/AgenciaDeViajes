@@ -21,7 +21,7 @@
     </header>
     
     <main class="main-cart">
-        <form action="/user/create/" method="POST">
+        <form action="/user/create/" method="POST" enctype="multipart/form-data">
             <legend class="tamaño-titulo-formulario">Formulario de creación de libros</legend>
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre del producto:</label>
@@ -54,8 +54,8 @@
                 <p class="erroresEdit" id="error5"></p>
             </div>
             <div class="mb-3">
-                <label for="discount" class="form-label">url de la imagen</label>
-				<input type="url" id="imagenProducto" name="imagenLibro" class="form-control" placeholder="url de la imagen">
+                <label for="discount" class="form-label">selecciona una imagen</label>
+				<input type="file" id="imagenProducto" name="imagenLibro" class="form-control" placeholder="url de la imagen">
                 <p class="erroresEdit" id="error3"></p>
             </div>
             <div class="mb-3 boton-guardar " >
