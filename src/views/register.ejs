@@ -33,6 +33,7 @@
                 <p style="color: red;"><%= errors.nombre.msg %></p>
             </div>
         <% } %>
+        <p class="erroresEdit" id="error1"></p>
         
 
         <label for="Apellido"></label>
@@ -42,6 +43,7 @@
                 <p style="color: red;"><%= errors.Apellido.msg %></p>
             </div>
         <% } %>
+        <p class="erroresEdit" id="error1"></p>
 
         <label for="username"></label>
         <!-- <div class="error" id="username-error"></div> -->
@@ -51,6 +53,7 @@
                 <p style="color: red;"><%= errors.username.msg %></p>
             </div>
         <% } %>
+        <p class="erroresEdit" id="error1"></p>
         <label for="email"></label>
         <input type="email" placeholder="email" name="email" class="control" id="name"><br>
         <% if (locals.errors && errors.email) { %>
@@ -58,6 +61,7 @@
                 <p style="color: red;"><%= errors.email.msg %></p>
             </div>
         <% } %>
+        <p class="erroresEdit" id="error1"></p>
         <label for="fecha-nacimiento">fecha de nacimiento</label>
         <input type="date" placeholder="Fecha de Nacimiento" name="fecha-nacimiento" class="control" id="f1"><br>
 
@@ -125,9 +129,21 @@
         <label for="password"></label>
         <input type="password" placeholder="Contraseña" name="password" class="control" id="name"><br>
         <div class="error" id="password-error"></div>
+        <% if (locals.errors && errors.password) { %>
+            <div>
+                <p class="errorLogin"><%= errors.password.msg %></p>
+            </div>
+        <% } %>
+        <p class="erroresEdit" id="error1"></p>
         <label for="confirm-password"></label>
         <input type="password" placeholder="Confirmar Contraseña" name="confirm-password" class="control" id="name"><br>
         <div class="g-recaptcha" data-sitekey="6LcHN4QmAAAAAEIbXoXZuJ6SofhKZuZvqRpEMT0L"></div>
+        <% if (locals.errors && errors.password) { %>
+            <div>
+                <p class="errorLogin"><%= errors.password.msg %></p>
+            </div>
+        <% } %>
+        <p class="erroresEdit" id="error1"></p>
 
         <label for="Apellido"></label>
         <input type="url" placeholder="url de la imagen" name="imagenPerfil" class="control" id="imgPerfil"><br>
