@@ -15,7 +15,7 @@
     background-color: #1D1D1D;
     /* max-width: 100%; */
     width: 100%;
-    height: 32vw;
+    height: 29vw;
 }
 
 .main-div1 {
@@ -82,21 +82,22 @@
 }
 
 .buscar {
-    border-radius: 8px;
+    border-radius: 5px;
     width: 70vw;
-    height: 7.5vw;
+    height: 6vw;
     border-style: none;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 .boton {
     border-radius: 6px;
     width: 15vw;
-    height: 7.5vw;
+    height: 6vw;
     position: relative;
     left: 23px;
     border-style: none;
+    font-size: .8rem;
 }
 
 /* --------CAROUSEL---480PX-------*/
@@ -110,12 +111,12 @@
 }
 
 .libros {
-    width: 35%;
-    border: 5px solid white;
+    width: 19%;
+    border: 2px solid white;
     margin-bottom: 10px;
     margin-top: 10px;
     position: relative;
-    left: 33%;
+    left: 42%;
 }
 
 
@@ -222,6 +223,10 @@
 .container {
     display: inline-flex;
     flex-wrap: wrap;
+    position: relative;
+    bottom: 8vw;
+    
+    
 }
 
 .carrito-boton-comprar {
@@ -597,6 +602,11 @@
 .container {
     display: inline-flex;
     flex-wrap: wrap;
+    position: relative;
+    left: 7vw;
+    bottom: 5vw;
+    
+
 }
 
 .precio {
@@ -817,6 +827,25 @@
     border-radius: 5px;
     width: 100%;
 }
+ 
+/* CAROUSEL 481-769-PX*/
+
+.fondolibros {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.libros {
+    width: 15%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    left: 42%;
+}
 
 }
 
@@ -974,6 +1003,7 @@
     .container {
         display:flex;
         flex-wrap: wrap;
+        background-color: #1D1D1D;
     }
 
     .precio {
@@ -1029,6 +1059,8 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
+        position: relative;
+        bottom: 2vw;
     }
 
     .carrito-boton-comprar {
@@ -1206,6 +1238,26 @@
         border-radius: 5px;
         width: 100%;
     }
+
+    /* CAROUSEL 769*/
+
+    .fondolibros {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .libros {
+        width: 15%;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        position: relative;
+        left: 42%;
+    }
+
 }
     
 @media (min-width: 1200px){
@@ -1430,6 +1482,26 @@
         padding-right: 10px;
     }
   
+/* CAROUSEL 1200*/
+
+.fondolibros {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.libros {
+    width: 19%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    left: 42%;
+}
+
+
 
 /* -----------detalle de producto 1200px--------- */
 
@@ -1842,6 +1914,37 @@ a:visited {
         border-radius: 8px;
         border-style: none;
     }
+
+    .container{
+        position: relative;
+        top:1vw;
+    }
+
+    
+    .fondolibros {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .libros {
+        width: 15%;
+        border: 2px solid white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        position: relative;
+        left: 42%;
+    }
+
+    /* .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom:8vw;
+    } */
+    
 }
 
     .form-prg input[type="password"]{
