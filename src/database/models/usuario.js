@@ -11,7 +11,8 @@ function usuariosData (sequelize, Datatypes){
         fechacreacion: {type: Datatypes.DATE},
         fechaeliminacion: {type: Datatypes.DATE},
         rol: {type: Datatypes.ENUM('Administrador', 'Cliente', 'Vendedor')} ,
-        id_libro: {type: Datatypes.INTEGER} 
+        id_libro: {type: Datatypes.INTEGER},
+        imagen: {type: Datatypes.STRING(1500)}
     }
 
     let config = {camelCase: false, timestamps: false};

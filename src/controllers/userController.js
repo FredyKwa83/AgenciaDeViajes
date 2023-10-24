@@ -35,6 +35,7 @@ const userController ={
                 password: bcrypt.hashSync(req.body.password, 10),
                 username: req.body.username,
                 rol: req.body.rol,
+                imagen: req.body.imagenPerfil
             })
 
             res.render('login'); 
@@ -98,7 +99,8 @@ const userController ={
             precio: req.body.precio,
             descuento: req.body.descuento,
             genero: req.body.genero,
-            descuento: req.body.descuento
+            descuento: req.body.descuento,
+            imagen: req.body.imagenLibro
         });
         res.redirect('/'); // manda el producto al index
     },
