@@ -2375,3 +2375,10 @@ a:visited {
 .inputLogin{
     height: 35px !important;
 }
+
+.img-vistaPerfil{
+    height: 40%;
+    width: 20%;
+    border-radius: 100%;
+    margin-bottom: 2vw;
+}
