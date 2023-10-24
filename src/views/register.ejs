@@ -23,7 +23,7 @@
         <h1 class="registerTitulo">Registro de Usuario</h1>
     </div>
     
-    <form action="/user/register" method="post" class="register">
+    <form action="/user/register" method="post" enctype="multipart/form-data" class="register">
 
 
         <label for="nombre"></label>
@@ -145,8 +145,8 @@
         <% } %>
         <p class="erroresEdit" id="error1"></p>
 
-        <label for="Apellido"></label>
-        <input type="url" placeholder="url de la imagen" name="imagenPerfil" class="control" id="imgPerfil"><br>
+        <label for="imagenPerfil">url de la imagen</label>
+        <input type="file" name="imagenPerfil" class="control" id="imgPerfil"><br>
 
         <div class="button-container">
             <button type="submit">Enviar</button>
